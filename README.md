@@ -160,14 +160,13 @@ If you use this code, please cite:
 
 ## 8. AI-tooling disclosure
 
-This codebase and the accompanying manuscript were developed with substantial
-assistance from Anthropic Claude (via Claude Code), used as an iterative coding
-assistant for the simulation engine, the SMM estimation, the robustness and UK
-validation scripts, and the replication infrastructure, and for manuscript
-drafting and editing. The author specified all model structure, calibration
-choices, analytical decisions, and acceptance criteria; reviewed, edited, and
-verified the resulting code and prose; and takes full responsibility for the
-contents of both the codebase and the publication.
+This codebase and the accompanying manuscript were developed with assistance
+from Anthropic Claude, used as an iterative coding assistant for the simulation
+engine, the SMM estimation, the robustness and UK validation scripts. The
+author specified all model structure, calibration choices, analytical
+decisions, and acceptance criteria; reviewed, edited, and verified the
+resulting code and prose; and takes full responsibility for the contents of
+both the codebase and the publication.
 
 ---
 
