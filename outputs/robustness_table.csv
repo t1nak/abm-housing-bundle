@@ -1,0 +1,13 @@
+scenario,leakage,rent_leakage,supply_leakage,friction_leakage,median,mean_uncensored,share_censored,n_censored,n_total
+B,low,0.2,0.15,0.25,,,1.0,10,10
+C,low,0.2,0.15,0.25,,,1.0,10,10
+D,low,0.2,0.15,0.25,,,1.0,10,10
+E,low,0.2,0.15,0.25,6.0,6.0,0.2,2,10
+B,medium,0.4,0.3,0.5,,,1.0,10,10
+C,medium,0.4,0.3,0.5,,,1.0,10,10
+D,medium,0.4,0.3,0.5,,,1.0,10,10
+E,medium,0.4,0.3,0.5,7.0,7.0,0.8,8,10
+B,high,0.6,0.5,0.7,,,1.0,10,10
+C,high,0.6,0.5,0.7,,,1.0,10,10
+D,high,0.6,0.5,0.7,,,1.0,10,10
+E,high,0.6,0.5,0.7,,,1.0,10,10

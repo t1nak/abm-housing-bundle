@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "script": "scripts/run_kr_robustness.py",
+    "git_commit": "b81d70be43799692f33b1e87a293381f5c126ee3",
+    "timestamp_utc": "2026-05-26T09:25:58Z",
+    "seeds": [
+      73,
+      74,
+      75,
+      76,
+      77
+    ],
+    "n_periods": 15,
+    "seed_vector_sha256": "337f9e7dc65e97d4a4517b0470bf537daeba1f3aeb35fb2c0be3babb864efde1",
+    "parameter_vector_sha256": "45bfad5d6b4d10b12b4042a06e06297197881c1004a7926ce408739b5e0bb0be",
+    "reference_rule_ay": "akerlof_yellen",
+    "reference_rule_kr": "koszegi_rabin",
+    "kr_operationalisation": "AR(1) on own realised outcome with the same rho_aspiration as AY; only the anchor variable differs",
+    "smm_optimum_source": "outputs/smm_optimum.json",
+    "theta_hat": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "param_names": [
+      "beta_dissat",
+      "beta_renter",
+      "rho_aspiration",
+      "alpha_local",
+      "price_slope",
+      "beta_0",
+      "assortative_exponent",
+      "intergenerational_skill_corr"
+    ]
+  },
+  "ay_headline": {
+    "moment_names": [
+      "wealth_gini",
+      "top_1_wealth_share",
+      "top_10_wealth_share",
+      "bottom_50_wealth_share",
+      "homeownership_rate",
+      "aggregate_price_growth_15y",
+      "cross_regional_price_growth_sd",
+      "price_growth_supply_elasticity_correlation",
+      "aggregate_extreme_share_final",
+      "extreme_share_year_5",
+      "extreme_share_year_10",
+      "cross_regional_extreme_share_dispersion"
+    ],
+    "moment_targets": [
+      0.81,
+      0.25,
+      0.6,
+      0.03,
+      0.5,
+      0.8,
+      0.5,
+      -0.7,
+      0.208,
+      0.1,
+      0.15,
+      0.08
+    ],
+    "moment_at_optimum": [
+      0.7830946184568571,
+      0.25513084016214516,
+      0.6390250283738317,
+      0.024529215649970557,
+      0.48166666666666663,
+      0.6505784343691206,
+      0.45417652615127313,
+      -0.6964345451322704,
+      0.20929999999999999,
+      0.09515333333333334,
+      0.16174,
+      0.05059617978204223
+    ],
+    "validation": {
+      "within_region_renter_owner_vote_gap": {
+        "target": 0.15,
+        "model": 0.27971068973317276,
+        "error": 0.12971068973317276
+      }
+    }
+  },
+  "kr_alternative": {
+    "moment_names": [
+      "wealth_gini",
+      "top_1_wealth_share",
+      "top_10_wealth_share",
+      "bottom_50_wealth_share",
+      "homeownership_rate",
+      "aggregate_price_growth_15y",
+      "cross_regional_price_growth_sd",
+      "price_growth_supply_elasticity_correlation",
+      "aggregate_extreme_share_final",
+      "extreme_share_year_5",
+      "extreme_share_year_10",
+      "cross_regional_extreme_share_dispersion"
+    ],
+    "moment_targets": [
+      0.81,
+      0.25,
+      0.6,
+      0.03,
+      0.5,
+      0.8,
+      0.5,
+      -0.7,
+      0.208,
+      0.1,
+      0.15,
+      0.08
+    ],
+    "moment_at_optimum": [
+      0.7830946184568571,
+      0.25513084016214516,
+      0.6390250283738317,
+      0.024529215649970557,
+      0.48166666666666663,
+      0.6505784343691206,
+      0.45417652615127313,
+      -0.6964345451322704,
+      0.008546666666666666,
+      0.006786666666666666,
+      0.006873333333333334,
+      0.0029818393541634304
+    ],
+    "validation": {
+      "within_region_renter_owner_vote_gap": {
+        "target": 0.15,
+        "model": 0.006847740223972672,
+        "error": -0.14315225977602733
+      }
+    }
+  },
+  "comparison_to_ay_headline": {
+    "deltas_per_moment": {
+      "wealth_gini": 0.0,
+      "top_1_wealth_share": 0.0,
+      "top_10_wealth_share": 0.0,
+      "bottom_50_wealth_share": 0.0,
+      "homeownership_rate": 0.0,
+      "aggregate_price_growth_15y": 0.0,
+      "cross_regional_price_growth_sd": 0.0,
+      "price_growth_supply_elasticity_correlation": 0.0,
+      "aggregate_extreme_share_final": -0.2007533333333333,
+      "extreme_share_year_5": -0.08836666666666668,
+      "extreme_share_year_10": -0.15486666666666665,
+      "cross_regional_extreme_share_dispersion": -0.0476143404278788,
+      "within_region_renter_owner_vote_gap": -0.2728629495092001
+    }
+  },
+  "honesty_check": {
+    "paper_claim": {
+      "cleavage_target": 0.18,
+      "cleavage_tolerance": 0.02,
+      "afd_target": 0.16,
+      "afd_tolerance": 0.01,
+      "ay_headline_cleavage": 0.279,
+      "ay_headline_afd": 0.209,
+      "source": "manuscript Section 9.1 (reference-point specification)"
+    },
+    "kr_afd": 0.008546666666666666,
+    "kr_cleavage": 0.006847740223972672,
+    "afd_within_tolerance": false,
+    "cleavage_within_tolerance": false,
+    "reproduces_section_9_1": false,
+    "afd_error": -0.15145333333333333,
+    "cleavage_error": -0.17315225977602733
+  },
+  "wallclock_seconds": 13.585584878921509
+}

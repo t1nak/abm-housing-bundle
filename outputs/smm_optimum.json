@@ -1,0 +1,151 @@
+{
+  "theta_hat": [
+    8.252515052738755,
+    0.2,
+    0.9,
+    0.2,
+    0.05792025732263979,
+    -5.43499415749763,
+    3.0,
+    0.85
+  ],
+  "se": [
+    0.047937308594968295,
+    0.07494964167193521,
+    0.0007161455671898044,
+    0.006117267105837419,
+    0.0002254499754763143,
+    0.08960196789696241,
+    0.03225085100641557,
+    0.006038668923433227
+  ],
+  "param_names": [
+    "beta_dissat",
+    "beta_renter",
+    "rho_aspiration",
+    "alpha_local",
+    "price_slope",
+    "beta_0",
+    "assortative_exponent",
+    "intergenerational_skill_corr"
+  ],
+  "j_statistic": 1180503.6410941188,
+  "dof": 4,
+  "p_value": 0.0,
+  "moment_names": [
+    "wealth_gini",
+    "top_1_wealth_share",
+    "top_10_wealth_share",
+    "bottom_50_wealth_share",
+    "homeownership_rate",
+    "aggregate_price_growth_15y",
+    "cross_regional_price_growth_sd",
+    "price_growth_supply_elasticity_correlation",
+    "aggregate_extreme_share_final",
+    "extreme_share_year_5",
+    "extreme_share_year_10",
+    "cross_regional_extreme_share_dispersion"
+  ],
+  "moment_targets": [
+    0.81,
+    0.25,
+    0.6,
+    0.03,
+    0.5,
+    0.8,
+    0.5,
+    -0.7,
+    0.208,
+    0.1,
+    0.15,
+    0.08
+  ],
+  "moment_at_optimum": [
+    0.784789249908669,
+    0.2585939271402262,
+    0.6423041095331452,
+    0.024252678271249585,
+    0.47968666666666665,
+    0.6567613518014073,
+    0.4096845879520126,
+    -0.7737887802840375,
+    0.20929999999999999,
+    0.09478,
+    0.16134,
+    0.049249781735664605
+  ],
+  "moment_residuals": [
+    -0.025210750091331002,
+    0.00859392714022622,
+    0.04230410953314523,
+    -0.005747321728750414,
+    -0.02031333333333335,
+    -0.14323864819859278,
+    -0.09031541204798738,
+    -0.07378878028403757,
+    0.0012999999999999956,
+    -0.005220000000000002,
+    0.011340000000000017,
+    -0.030750218264335397
+  ],
+  "moment_weights": [
+    0.08,
+    0.08,
+    0.07,
+    0.06,
+    0.06,
+    0.1,
+    0.08,
+    0.07,
+    0.18,
+    0.06,
+    0.06,
+    0.1
+  ],
+  "validation": {
+    "within_region_renter_owner_vote_gap": {
+      "target": 0.15,
+      "model": 0.2799922992200109,
+      "error": 0.1299922992200109,
+      "tolerance": 0.05,
+      "passed": false
+    },
+    "cross_regional_extreme_share_price_growth_correlation": {
+      "target": -0.6,
+      "model": -0.7848420094894116,
+      "error": -0.18484200948941165,
+      "tolerance": 0.2,
+      "passed": true
+    },
+    "bottom_quartile_wage_growth_2010_2025": {
+      "target": 0.04,
+      "model": 0.20878701926813528,
+      "error": 0.16878701926813527,
+      "tolerance": 0.05,
+      "passed": false
+    },
+    "uk_brexit_region_price_growth_correlation": {
+      "target": -0.2,
+      "model": NaN,
+      "error": NaN,
+      "tolerance": 0.15,
+      "passed": false
+    }
+  },
+  "n_seeds_per_eval": 5,
+  "n_first_stage": 200,
+  "n_second_stage": 100,
+  "stage2_theta": [
+    3.0,
+    0.2,
+    0.9,
+    0.2,
+    0.15,
+    -6.893252088314374,
+    2.8894684926489287,
+    0.85
+  ],
+  "stage2_j_statistic": 627432.6233301966,
+  "stage_used": "stage_1",
+  "fallback_reason": "Stage-2 gp_minimize converged to a degenerate optimum where aggregate_extreme_share_final fell to 0,004 versus target 0,208. This is a known SMM pathology when the optimal weighting matrix W2 = Sigma^{-1} is poorly conditioned at the stage-1 covariance estimate. Standard practice: fall back to stage-1, which is asymptotically less efficient but finite-sample more robust."
+}

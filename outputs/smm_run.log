@@ -1,0 +1,90 @@
+/Users/admin/Downloads/abm_paper_kit/.claude/worktrees/distracted-herschel-1e3a23/.venv/lib/python3.12/site-packages/skopt/sampler/sobol.py:521: UserWarning: The balance properties of Sobol' points require n to be a power of 2. 0 points have been previously generated, then: n=0+20=20. 
+  warnings.warn(
+/Users/admin/Downloads/abm_paper_kit/.claude/worktrees/distracted-herschel-1e3a23/.venv/lib/python3.12/site-packages/skopt/sampler/sobol.py:521: UserWarning: The balance properties of Sobol' points require n to be a power of 2. 0 points have been previously generated, then: n=0+11=11. 
+  warnings.warn(
+SMM budget: n_first_stage=200, n_second_stage=100, n_variance_replications=20
+SMM starting. K = 12 moments, P = 8 parameters, seeds = [73, 74, 75, 76, 77]
+Stage 0: estimating moment variance (20 replications)
+Stage 1: gp_minimize, n_calls = 200, Sobol init = 20
+  stage1 iter  10/200: obj = 1.17497e+04, best = 9.60975e+02
+  stage1 iter  20/200: obj = 3.57347e+03, best = 8.66958e+02
+  stage1 iter  30/200: obj = 2.72161e+03, best = 7.13911e+02
+  stage1 iter  40/200: obj = 9.92409e+02, best = 5.35422e+02
+  stage1 iter  50/200: obj = 9.90789e+02, best = 5.35422e+02
+  stage1 iter  60/200: obj = 8.95758e+02, best = 5.35422e+02
+  stage1 iter  70/200: obj = 8.41294e+02, best = 5.35422e+02
+  stage1 iter  80/200: obj = 1.23120e+03, best = 5.35422e+02
+  stage1 iter  90/200: obj = 1.26786e+03, best = 5.35422e+02
+  stage1 iter 100/200: obj = 6.86244e+02, best = 5.35422e+02
+  stage1 iter 110/200: obj = 9.88056e+02, best = 5.35422e+02
+  stage1 iter 120/200: obj = 1.53153e+03, best = 5.35422e+02
+  stage1 iter 130/200: obj = 4.81867e+02, best = 4.81867e+02
+  stage1 iter 140/200: obj = 5.64807e+02, best = 4.81867e+02
+  stage1 iter 150/200: obj = 6.21493e+02, best = 4.81867e+02
+  stage1 iter 160/200: obj = 1.50509e+03, best = 4.81867e+02
+  stage1 iter 170/200: obj = 6.48437e+02, best = 4.81867e+02
+  stage1 iter 180/200: obj = 1.47609e+03, best = 4.81867e+02
+  stage1 iter 190/200: obj = 8.41090e+02, best = 4.81867e+02
+  stage1 iter 200/200: obj = 5.20526e+02, best = 4.81867e+02
+Stage 1 optimum: obj = 4.81867e+02
+  beta_dissat                    = +8.2525
+  beta_renter                    = +0.2000
+  rho_aspiration                 = +0.9000
+  alpha_local                    = +0.2000
+  price_slope                    = +0.0579
+  beta_0                         = -5.4350
+  assortative_exponent           = +3.0000
+  intergenerational_skill_corr   = +0.8500
+Stage 2: estimating moment covariance at stage-1 optimum
+Stage 2: gp_minimize, n_calls = 100, warm start at stage-1 optimum
+  stage2 iter  10/100: obj = 7.39780e+05, best = 7.39780e+05
+  stage2 iter  20/100: obj = 7.38139e+05, best = 6.29925e+05
+  stage2 iter  30/100: obj = 6.30835e+05, best = 6.28017e+05
+  stage2 iter  40/100: obj = 6.27433e+05, best = 6.27433e+05
+  stage2 iter  50/100: obj = 6.45197e+05, best = 6.27433e+05
+  stage2 iter  60/100: obj = 6.27943e+05, best = 6.27433e+05
+  stage2 iter  70/100: obj = 6.28520e+05, best = 6.27433e+05
+  stage2 iter  80/100: obj = 6.39613e+05, best = 6.27433e+05
+  stage2 iter  90/100: obj = 6.28165e+05, best = 6.27433e+05
+  stage2 iter 100/100: obj = 6.36267e+05, best = 6.27433e+05
+Stage 2 optimum: obj = 6.27433e+05
+Computing moment Jacobian (central differences)
+
+==============================================================================
+SMM optimum reached
+==============================================================================
+J-statistic: 627432.6233  dof: 4  p-value: 0.0000
+
+parameter                          estimate  std error SE/|theta| identified
+  beta_dissat                       +3.0000     0.1053      0.035        yes
+  beta_renter                       +0.2000     0.2122      1.061         no
+  rho_aspiration                    +0.9000     0.0494      0.055        yes
+  alpha_local                       +0.2000     0.1391      0.696         no
+  price_slope                       +0.1500     0.0003      0.002        yes
+  beta_0                            -6.8933     0.1791      0.026        yes
+  assortative_exponent              +2.8895     0.0237      0.008        yes
+  intergenerational_skill_corr      +0.8500     0.0049      0.006        yes
+
+Calibration moments at optimum:
+  wealth_gini                                             target=+0.8100  model=+0.8034  err=-0.0066
+  top_1_wealth_share                                      target=+0.2500  model=+0.2912  err=+0.0412
+  top_10_wealth_share                                     target=+0.6000  model=+0.6724  err=+0.0724
+  bottom_50_wealth_share                                  target=+0.0300  model=+0.0204  err=-0.0096
+  homeownership_rate                                      target=+0.5000  model=+0.4594  err=-0.0406
+  aggregate_price_growth_15y                              target=+0.8000  model=+1.0950  err=+0.2950
+  cross_regional_price_growth_sd                          target=+0.5000  model=+0.4837  err=-0.0163
+  price_growth_supply_elasticity_correlation              target=-0.7000  model=-0.9109  err=-0.2109
+  aggregate_extreme_share_final                           target=+0.2080  model=+0.0044  err=-0.2036
+  extreme_share_year_5                                    target=+0.1000  model=+0.0027  err=-0.0973
+  extreme_share_year_10                                   target=+0.1500  model=+0.0037  err=-0.1463
+  cross_regional_extreme_share_dispersion                 target=+0.0800  model=+0.0016  err=-0.0784
+
+Scoring validation moments at SMM optimum
+  within_region_renter_owner_vote_gap                     target=+0.1500  model=+0.0050  err=-0.1450  FAIL
+  cross_regional_extreme_share_price_growth_correlation   target=-0.6000  model=-0.4554  err=+0.1446  PASS
+  bottom_quartile_wage_growth_2010_2025                   target=+0.0400  model=+0.2088  err=+0.1688  FAIL
+  uk_brexit_region_price_growth_correlation               target=-0.2000  model=NaN  (NaN)
+
+Saved outputs/smm_optimum.json
+Saved outputs/smm_state.pkl
+Saved outputs/sensitivity_jacobian.png

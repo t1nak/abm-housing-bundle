@@ -1,0 +1,1507 @@
+{
+  "theta_hat": [
+    8.252515052738755,
+    0.2,
+    0.9,
+    0.2,
+    0.05792025732263979,
+    -5.43499415749763,
+    3.0,
+    0.85
+  ],
+  "param_names": [
+    "beta_dissat",
+    "beta_renter",
+    "rho_aspiration",
+    "alpha_local",
+    "price_slope",
+    "beta_0",
+    "assortative_exponent",
+    "intergenerational_skill_corr"
+  ],
+  "de_seeds": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82
+  ],
+  "uk_seeds": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82
+  ],
+  "cells": [
+    {
+      "cell": "1_baseline",
+      "spec": {
+        "assortative_help": false,
+        "gamma_cosmopolitan": 0.0,
+        "estimate_beta_n_flag": false,
+        "beta_network": 0.6
+      },
+      "de_calibration_moments": {
+        "wealth_gini": 0.7823122154660549,
+        "top_1_wealth_share": 0.25180914620693795,
+        "top_10_wealth_share": 0.6377551845473673,
+        "bottom_50_wealth_share": 0.0245581862284539,
+        "homeownership_rate": 0.4811799999999999,
+        "aggregate_price_growth_15y": 0.6611729558992431,
+        "cross_regional_price_growth_sd": 0.44079542127665006,
+        "price_growth_supply_elasticity_correlation": -0.6950455638197834,
+        "aggregate_extreme_share_final": 0.20861666666666667,
+        "extreme_share_year_5": 0.09499333333333333,
+        "extreme_share_year_10": 0.16177333333333332,
+        "cross_regional_extreme_share_dispersion": 0.051422628259935134
+      },
+      "de_validation_moments": {
+        "within_region_renter_owner_vote_gap": 0.27820419672733465,
+        "cross_regional_extreme_share_price_growth_correlation": -0.6606771835769578,
+        "cross_regional_extreme_share_price_growth_partial_correlation_income": 0.4508723157942387,
+        "bottom_quartile_wage_growth_2010_2025": 0.20855605435529584,
+        "uk_brexit_region_price_growth_correlation": NaN
+      },
+      "uk_metrics": {
+        "uk_aggregate_leave": 0.17554666666666666,
+        "uk_cleavage": 0.22935205385171037,
+        "uk_dispersion": 0.04221099944328775
+      },
+      "fit_n": 11,
+      "fit_total": 12,
+      "fit_rows": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.7823122154660549,
+          "error": -0.02768778453394516,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.25180914620693795,
+          "error": 0.0018091462069379505,
+          "tolerance": 0.05,
+          "passed": true
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.6377551845473673,
+          "error": 0.03775518454736737,
+          "tolerance": 0.05,
+          "passed": true
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.0245581862284539,
+          "error": -0.005441813771546098,
+          "tolerance": 0.02,
+          "passed": true
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.4811799999999999,
+          "error": -0.018820000000000114,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 0.6611729558992431,
+          "error": -0.13882704410075697,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.44079542127665006,
+          "error": -0.05920457872334994,
+          "tolerance": 0.1,
+          "passed": true
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.6950455638197834,
+          "error": 0.004954436180216515,
+          "tolerance": 0.15,
+          "passed": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.20861666666666667,
+          "error": 0.000616666666666682,
+          "tolerance": 0.01,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.09499333333333333,
+          "error": -0.005006666666666673,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.16177333333333332,
+          "error": 0.01177333333333333,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.051422628259935134,
+          "error": -0.028577371740064868,
+          "tolerance": 0.03,
+          "passed": true
+        }
+      ],
+      "summary": {
+        "aggregate_afd_de": 0.20861666666666667,
+        "de_cleavage": 0.27820419672733465,
+        "de_dispersion": 0.051422628259935134,
+        "uk_cleavage": 0.22935205385171037,
+        "uk_dispersion": 0.04221099944328775,
+        "fit_fraction": "11/12"
+      },
+      "notes": [],
+      "elapsed_seconds": 26.75304388999939
+    },
+    {
+      "cell": "2_assortative_help",
+      "spec": {
+        "assortative_help": true,
+        "gamma_cosmopolitan": 0.0,
+        "estimate_beta_n_flag": false,
+        "beta_network": 0.6
+      },
+      "de_calibration_moments": {
+        "wealth_gini": 0.9118936541348173,
+        "top_1_wealth_share": 0.6531855795048985,
+        "top_10_wealth_share": 0.8602532458130403,
+        "bottom_50_wealth_share": 0.008159385079211046,
+        "homeownership_rate": 0.45940666666666663,
+        "aggregate_price_growth_15y": 1.1244893940547285,
+        "cross_regional_price_growth_sd": 0.37106670085887294,
+        "price_growth_supply_elasticity_correlation": -0.8472082970168102,
+        "aggregate_extreme_share_final": 0.21445000000000003,
+        "extreme_share_year_5": 0.09476666666666668,
+        "extreme_share_year_10": 0.16216000000000003,
+        "cross_regional_extreme_share_dispersion": 0.04639722209893373
+      },
+      "de_validation_moments": {
+        "within_region_renter_owner_vote_gap": 0.3056318093194045,
+        "cross_regional_extreme_share_price_growth_correlation": -0.8124189089814433,
+        "cross_regional_extreme_share_price_growth_partial_correlation_income": 0.02056996858463956,
+        "bottom_quartile_wage_growth_2010_2025": 0.20794291637277668,
+        "uk_brexit_region_price_growth_correlation": NaN
+      },
+      "uk_metrics": {
+        "uk_aggregate_leave": 0.17561666666666667,
+        "uk_cleavage": 0.24781459030666236,
+        "uk_dispersion": 0.04042857908997081
+      },
+      "fit_n": 4,
+      "fit_total": 12,
+      "fit_rows": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.9118936541348173,
+          "error": 0.10189365413481721,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.6531855795048985,
+          "error": 0.40318557950489853,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.8602532458130403,
+          "error": 0.2602532458130403,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.008159385079211046,
+          "error": -0.021840614920788953,
+          "tolerance": 0.02,
+          "passed": false
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.45940666666666663,
+          "error": -0.04059333333333337,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 1.1244893940547285,
+          "error": 0.32448939405472843,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.37106670085887294,
+          "error": -0.12893329914112706,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.8472082970168102,
+          "error": -0.14720829701681026,
+          "tolerance": 0.15,
+          "passed": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.21445000000000003,
+          "error": 0.006450000000000039,
+          "tolerance": 0.01,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.09476666666666668,
+          "error": -0.005233333333333326,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.16216000000000003,
+          "error": 0.012160000000000032,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.04639722209893373,
+          "error": -0.03360277790106627,
+          "tolerance": 0.03,
+          "passed": false
+        }
+      ],
+      "summary": {
+        "aggregate_afd_de": 0.21445000000000003,
+        "de_cleavage": 0.3056318093194045,
+        "de_dispersion": 0.04639722209893373,
+        "uk_cleavage": 0.24781459030666236,
+        "uk_dispersion": 0.04042857908997081,
+        "fit_fraction": "4/12"
+      },
+      "notes": [
+        "fit fraction below 5/12: 4/12"
+      ],
+      "elapsed_seconds": 26.829072952270508
+    },
+    {
+      "cell": "3_gamma_shared",
+      "spec": {
+        "assortative_help": false,
+        "gamma_cosmopolitan": -5.156,
+        "estimate_beta_n_flag": false,
+        "beta_network": 0.6
+      },
+      "de_calibration_moments": {
+        "wealth_gini": 0.7823122154660549,
+        "top_1_wealth_share": 0.25180914620693795,
+        "top_10_wealth_share": 0.6377551845473673,
+        "bottom_50_wealth_share": 0.0245581862284539,
+        "homeownership_rate": 0.4811799999999999,
+        "aggregate_price_growth_15y": 0.6611729558992431,
+        "cross_regional_price_growth_sd": 0.44079542127665006,
+        "price_growth_supply_elasticity_correlation": -0.6950455638197834,
+        "aggregate_extreme_share_final": 0.20770666666666665,
+        "extreme_share_year_5": 0.09556999999999999,
+        "extreme_share_year_10": 0.16152666666666665,
+        "cross_regional_extreme_share_dispersion": 0.06291034482694663
+      },
+      "de_validation_moments": {
+        "within_region_renter_owner_vote_gap": 0.27712547298842566,
+        "cross_regional_extreme_share_price_growth_correlation": -0.6694464872317291,
+        "cross_regional_extreme_share_price_growth_partial_correlation_income": 0.3348408167658318,
+        "bottom_quartile_wage_growth_2010_2025": 0.20855605435529584,
+        "uk_brexit_region_price_growth_correlation": NaN
+      },
+      "uk_metrics": {
+        "uk_aggregate_leave": 0.17614666666666665,
+        "uk_cleavage": 0.22960359150743295,
+        "uk_dispersion": 0.06446084211159839
+      },
+      "fit_n": 11,
+      "fit_total": 12,
+      "fit_rows": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.7823122154660549,
+          "error": -0.02768778453394516,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.25180914620693795,
+          "error": 0.0018091462069379505,
+          "tolerance": 0.05,
+          "passed": true
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.6377551845473673,
+          "error": 0.03775518454736737,
+          "tolerance": 0.05,
+          "passed": true
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.0245581862284539,
+          "error": -0.005441813771546098,
+          "tolerance": 0.02,
+          "passed": true
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.4811799999999999,
+          "error": -0.018820000000000114,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 0.6611729558992431,
+          "error": -0.13882704410075697,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.44079542127665006,
+          "error": -0.05920457872334994,
+          "tolerance": 0.1,
+          "passed": true
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.6950455638197834,
+          "error": 0.004954436180216515,
+          "tolerance": 0.15,
+          "passed": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.20770666666666665,
+          "error": -0.0002933333333333399,
+          "tolerance": 0.01,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.09556999999999999,
+          "error": -0.004430000000000017,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.16152666666666665,
+          "error": 0.011526666666666657,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.06291034482694663,
+          "error": -0.017089655173053372,
+          "tolerance": 0.03,
+          "passed": true
+        }
+      ],
+      "summary": {
+        "aggregate_afd_de": 0.20770666666666665,
+        "de_cleavage": 0.27712547298842566,
+        "de_dispersion": 0.06291034482694663,
+        "uk_cleavage": 0.22960359150743295,
+        "uk_dispersion": 0.06446084211159839,
+        "fit_fraction": "11/12"
+      },
+      "notes": [],
+      "elapsed_seconds": 25.912343978881836
+    },
+    {
+      "cell": "4_beta_n_flag_plumbing",
+      "spec": {
+        "assortative_help": false,
+        "gamma_cosmopolitan": 0.0,
+        "estimate_beta_n_flag": true,
+        "beta_network": 0.6
+      },
+      "de_calibration_moments": {
+        "wealth_gini": 0.7823122154660549,
+        "top_1_wealth_share": 0.25180914620693795,
+        "top_10_wealth_share": 0.6377551845473673,
+        "bottom_50_wealth_share": 0.0245581862284539,
+        "homeownership_rate": 0.4811799999999999,
+        "aggregate_price_growth_15y": 0.6611729558992431,
+        "cross_regional_price_growth_sd": 0.44079542127665006,
+        "price_growth_supply_elasticity_correlation": -0.6950455638197834,
+        "aggregate_extreme_share_final": 0.20861666666666667,
+        "extreme_share_year_5": 0.09499333333333333,
+        "extreme_share_year_10": 0.16177333333333332,
+        "cross_regional_extreme_share_dispersion": 0.051422628259935134
+      },
+      "de_validation_moments": {
+        "within_region_renter_owner_vote_gap": 0.27820419672733465,
+        "cross_regional_extreme_share_price_growth_correlation": -0.6606771835769578,
+        "cross_regional_extreme_share_price_growth_partial_correlation_income": 0.4508723157942387,
+        "bottom_quartile_wage_growth_2010_2025": 0.20855605435529584,
+        "uk_brexit_region_price_growth_correlation": NaN
+      },
+      "uk_metrics": {
+        "uk_aggregate_leave": 0.17554666666666666,
+        "uk_cleavage": 0.22935205385171037,
+        "uk_dispersion": 0.04221099944328775
+      },
+      "fit_n": 11,
+      "fit_total": 12,
+      "fit_rows": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.7823122154660549,
+          "error": -0.02768778453394516,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.25180914620693795,
+          "error": 0.0018091462069379505,
+          "tolerance": 0.05,
+          "passed": true
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.6377551845473673,
+          "error": 0.03775518454736737,
+          "tolerance": 0.05,
+          "passed": true
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.0245581862284539,
+          "error": -0.005441813771546098,
+          "tolerance": 0.02,
+          "passed": true
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.4811799999999999,
+          "error": -0.018820000000000114,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 0.6611729558992431,
+          "error": -0.13882704410075697,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.44079542127665006,
+          "error": -0.05920457872334994,
+          "tolerance": 0.1,
+          "passed": true
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.6950455638197834,
+          "error": 0.004954436180216515,
+          "tolerance": 0.15,
+          "passed": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.20861666666666667,
+          "error": 0.000616666666666682,
+          "tolerance": 0.01,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.09499333333333333,
+          "error": -0.005006666666666673,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.16177333333333332,
+          "error": 0.01177333333333333,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.051422628259935134,
+          "error": -0.028577371740064868,
+          "tolerance": 0.03,
+          "passed": true
+        }
+      ],
+      "summary": {
+        "aggregate_afd_de": 0.20861666666666667,
+        "de_cleavage": 0.27820419672733465,
+        "de_dispersion": 0.051422628259935134,
+        "uk_cleavage": 0.22935205385171037,
+        "uk_dispersion": 0.04221099944328775,
+        "fit_fraction": "11/12"
+      },
+      "notes": [],
+      "elapsed_seconds": 26.03664493560791
+    },
+    {
+      "cell": "5_help_plus_gamma_shared",
+      "spec": {
+        "assortative_help": true,
+        "gamma_cosmopolitan": -5.156,
+        "estimate_beta_n_flag": false,
+        "beta_network": 0.6
+      },
+      "de_calibration_moments": {
+        "wealth_gini": 0.9118936541348173,
+        "top_1_wealth_share": 0.6531855795048985,
+        "top_10_wealth_share": 0.8602532458130403,
+        "bottom_50_wealth_share": 0.008159385079211046,
+        "homeownership_rate": 0.45940666666666663,
+        "aggregate_price_growth_15y": 1.1244893940547285,
+        "cross_regional_price_growth_sd": 0.37106670085887294,
+        "price_growth_supply_elasticity_correlation": -0.8472082970168102,
+        "aggregate_extreme_share_final": 0.21366999999999997,
+        "extreme_share_year_5": 0.09535,
+        "extreme_share_year_10": 0.16225666666666666,
+        "cross_regional_extreme_share_dispersion": 0.05758299439225323
+      },
+      "de_validation_moments": {
+        "within_region_renter_owner_vote_gap": 0.3057334646300796,
+        "cross_regional_extreme_share_price_growth_correlation": -0.8126061887037173,
+        "cross_regional_extreme_share_price_growth_partial_correlation_income": -0.04877289903934253,
+        "bottom_quartile_wage_growth_2010_2025": 0.20794291637277668,
+        "uk_brexit_region_price_growth_correlation": NaN
+      },
+      "uk_metrics": {
+        "uk_aggregate_leave": 0.17576666666666668,
+        "uk_cleavage": 0.24964249237164768,
+        "uk_dispersion": 0.061344517945224566
+      },
+      "fit_n": 5,
+      "fit_total": 12,
+      "fit_rows": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.9118936541348173,
+          "error": 0.10189365413481721,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.6531855795048985,
+          "error": 0.40318557950489853,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.8602532458130403,
+          "error": 0.2602532458130403,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.008159385079211046,
+          "error": -0.021840614920788953,
+          "tolerance": 0.02,
+          "passed": false
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.45940666666666663,
+          "error": -0.04059333333333337,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 1.1244893940547285,
+          "error": 0.32448939405472843,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.37106670085887294,
+          "error": -0.12893329914112706,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.8472082970168102,
+          "error": -0.14720829701681026,
+          "tolerance": 0.15,
+          "passed": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.21366999999999997,
+          "error": 0.005669999999999981,
+          "tolerance": 0.01,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.09535,
+          "error": -0.004650000000000001,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.16225666666666666,
+          "error": 0.012256666666666666,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.05758299439225323,
+          "error": -0.022417005607746773,
+          "tolerance": 0.03,
+          "passed": true
+        }
+      ],
+      "summary": {
+        "aggregate_afd_de": 0.21366999999999997,
+        "de_cleavage": 0.3057334646300796,
+        "de_dispersion": 0.05758299439225323,
+        "uk_cleavage": 0.24964249237164768,
+        "uk_dispersion": 0.061344517945224566,
+        "fit_fraction": "5/12"
+      },
+      "notes": [],
+      "elapsed_seconds": 26.816800117492676
+    },
+    {
+      "cell": "6_help_plus_gamma_DE_specific",
+      "spec": {
+        "assortative_help": true,
+        "gamma_cosmopolitan": -7.5,
+        "estimate_beta_n_flag": false,
+        "beta_network": 0.6
+      },
+      "de_calibration_moments": {
+        "wealth_gini": 0.9118936541348173,
+        "top_1_wealth_share": 0.6531855795048985,
+        "top_10_wealth_share": 0.8602532458130403,
+        "bottom_50_wealth_share": 0.008159385079211046,
+        "homeownership_rate": 0.45940666666666663,
+        "aggregate_price_growth_15y": 1.1244893940547285,
+        "cross_regional_price_growth_sd": 0.37106670085887294,
+        "price_growth_supply_elasticity_correlation": -0.8472082970168102,
+        "aggregate_extreme_share_final": 0.21338333333333334,
+        "extreme_share_year_5": 0.09597000000000001,
+        "extreme_share_year_10": 0.16221000000000002,
+        "cross_regional_extreme_share_dispersion": 0.06343539214661295
+      },
+      "de_validation_moments": {
+        "within_region_renter_owner_vote_gap": 0.3051171372122584,
+        "cross_regional_extreme_share_price_growth_correlation": -0.8027911734184103,
+        "cross_regional_extreme_share_price_growth_partial_correlation_income": -0.06576319809939547,
+        "bottom_quartile_wage_growth_2010_2025": 0.20794291637277668,
+        "uk_brexit_region_price_growth_correlation": NaN
+      },
+      "uk_metrics": {
+        "uk_aggregate_leave": 0.17653666666666668,
+        "uk_cleavage": 0.2501208170894721,
+        "uk_dispersion": 0.07039048975581054
+      },
+      "fit_n": 5,
+      "fit_total": 12,
+      "fit_rows": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.9118936541348173,
+          "error": 0.10189365413481721,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.6531855795048985,
+          "error": 0.40318557950489853,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.8602532458130403,
+          "error": 0.2602532458130403,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.008159385079211046,
+          "error": -0.021840614920788953,
+          "tolerance": 0.02,
+          "passed": false
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.45940666666666663,
+          "error": -0.04059333333333337,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 1.1244893940547285,
+          "error": 0.32448939405472843,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.37106670085887294,
+          "error": -0.12893329914112706,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.8472082970168102,
+          "error": -0.14720829701681026,
+          "tolerance": 0.15,
+          "passed": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.21338333333333334,
+          "error": 0.005383333333333351,
+          "tolerance": 0.01,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.09597000000000001,
+          "error": -0.004029999999999992,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.16221000000000002,
+          "error": 0.012210000000000026,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.06343539214661295,
+          "error": -0.01656460785338705,
+          "tolerance": 0.03,
+          "passed": true
+        }
+      ],
+      "summary": {
+        "aggregate_afd_de": 0.21338333333333334,
+        "de_cleavage": 0.3051171372122584,
+        "de_dispersion": 0.06343539214661295,
+        "uk_cleavage": 0.2501208170894721,
+        "uk_dispersion": 0.07039048975581054,
+        "fit_fraction": "5/12"
+      },
+      "notes": [],
+      "elapsed_seconds": 27.659171104431152
+    },
+    {
+      "cell": "7a_all_three_beta_n_0.4",
+      "spec": {
+        "assortative_help": true,
+        "gamma_cosmopolitan": -5.156,
+        "estimate_beta_n_flag": false,
+        "beta_network": 0.4
+      },
+      "de_calibration_moments": {
+        "wealth_gini": 0.9118936541348173,
+        "top_1_wealth_share": 0.6531855795048985,
+        "top_10_wealth_share": 0.8602532458130403,
+        "bottom_50_wealth_share": 0.008159385079211046,
+        "homeownership_rate": 0.45940666666666663,
+        "aggregate_price_growth_15y": 1.1244893940547285,
+        "cross_regional_price_growth_sd": 0.37106670085887294,
+        "price_growth_supply_elasticity_correlation": -0.8472082970168102,
+        "aggregate_extreme_share_final": 0.21004,
+        "extreme_share_year_5": 0.09422666666666665,
+        "extreme_share_year_10": 0.15969,
+        "cross_regional_extreme_share_dispersion": 0.05598011385351218
+      },
+      "de_validation_moments": {
+        "within_region_renter_owner_vote_gap": 0.30168748305369447,
+        "cross_regional_extreme_share_price_growth_correlation": -0.8122307391832916,
+        "cross_regional_extreme_share_price_growth_partial_correlation_income": -0.04396552211190731,
+        "bottom_quartile_wage_growth_2010_2025": 0.20794291637277668,
+        "uk_brexit_region_price_growth_correlation": NaN
+      },
+      "uk_metrics": {
+        "uk_aggregate_leave": 0.17286666666666667,
+        "uk_cleavage": 0.24597175644510338,
+        "uk_dispersion": 0.05985660735511904
+      },
+      "fit_n": 5,
+      "fit_total": 12,
+      "fit_rows": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.9118936541348173,
+          "error": 0.10189365413481721,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.6531855795048985,
+          "error": 0.40318557950489853,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.8602532458130403,
+          "error": 0.2602532458130403,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.008159385079211046,
+          "error": -0.021840614920788953,
+          "tolerance": 0.02,
+          "passed": false
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.45940666666666663,
+          "error": -0.04059333333333337,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 1.1244893940547285,
+          "error": 0.32448939405472843,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.37106670085887294,
+          "error": -0.12893329914112706,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.8472082970168102,
+          "error": -0.14720829701681026,
+          "tolerance": 0.15,
+          "passed": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.21004,
+          "error": 0.002040000000000014,
+          "tolerance": 0.01,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.09422666666666665,
+          "error": -0.0057733333333333525,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.15969,
+          "error": 0.009690000000000004,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.05598011385351218,
+          "error": -0.02401988614648782,
+          "tolerance": 0.03,
+          "passed": true
+        }
+      ],
+      "summary": {
+        "aggregate_afd_de": 0.21004,
+        "de_cleavage": 0.30168748305369447,
+        "de_dispersion": 0.05598011385351218,
+        "uk_cleavage": 0.24597175644510338,
+        "uk_dispersion": 0.05985660735511904,
+        "fit_fraction": "5/12"
+      },
+      "notes": [],
+      "elapsed_seconds": 26.56563115119934
+    },
+    {
+      "cell": "7b_all_three_beta_n_0.6",
+      "spec": {
+        "assortative_help": true,
+        "gamma_cosmopolitan": -5.156,
+        "estimate_beta_n_flag": false,
+        "beta_network": 0.6
+      },
+      "de_calibration_moments": {
+        "wealth_gini": 0.9118936541348173,
+        "top_1_wealth_share": 0.6531855795048985,
+        "top_10_wealth_share": 0.8602532458130403,
+        "bottom_50_wealth_share": 0.008159385079211046,
+        "homeownership_rate": 0.45940666666666663,
+        "aggregate_price_growth_15y": 1.1244893940547285,
+        "cross_regional_price_growth_sd": 0.37106670085887294,
+        "price_growth_supply_elasticity_correlation": -0.8472082970168102,
+        "aggregate_extreme_share_final": 0.21366999999999997,
+        "extreme_share_year_5": 0.09535,
+        "extreme_share_year_10": 0.16225666666666666,
+        "cross_regional_extreme_share_dispersion": 0.05758299439225323
+      },
+      "de_validation_moments": {
+        "within_region_renter_owner_vote_gap": 0.3057334646300796,
+        "cross_regional_extreme_share_price_growth_correlation": -0.8126061887037173,
+        "cross_regional_extreme_share_price_growth_partial_correlation_income": -0.04877289903934253,
+        "bottom_quartile_wage_growth_2010_2025": 0.20794291637277668,
+        "uk_brexit_region_price_growth_correlation": NaN
+      },
+      "uk_metrics": {
+        "uk_aggregate_leave": 0.17576666666666668,
+        "uk_cleavage": 0.24964249237164768,
+        "uk_dispersion": 0.061344517945224566
+      },
+      "fit_n": 5,
+      "fit_total": 12,
+      "fit_rows": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.9118936541348173,
+          "error": 0.10189365413481721,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.6531855795048985,
+          "error": 0.40318557950489853,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.8602532458130403,
+          "error": 0.2602532458130403,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.008159385079211046,
+          "error": -0.021840614920788953,
+          "tolerance": 0.02,
+          "passed": false
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.45940666666666663,
+          "error": -0.04059333333333337,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 1.1244893940547285,
+          "error": 0.32448939405472843,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.37106670085887294,
+          "error": -0.12893329914112706,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.8472082970168102,
+          "error": -0.14720829701681026,
+          "tolerance": 0.15,
+          "passed": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.21366999999999997,
+          "error": 0.005669999999999981,
+          "tolerance": 0.01,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.09535,
+          "error": -0.004650000000000001,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.16225666666666666,
+          "error": 0.012256666666666666,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.05758299439225323,
+          "error": -0.022417005607746773,
+          "tolerance": 0.03,
+          "passed": true
+        }
+      ],
+      "summary": {
+        "aggregate_afd_de": 0.21366999999999997,
+        "de_cleavage": 0.3057334646300796,
+        "de_dispersion": 0.05758299439225323,
+        "uk_cleavage": 0.24964249237164768,
+        "uk_dispersion": 0.061344517945224566,
+        "fit_fraction": "5/12"
+      },
+      "notes": [],
+      "elapsed_seconds": 26.665649890899658
+    },
+    {
+      "cell": "7c_all_three_beta_n_0.8",
+      "spec": {
+        "assortative_help": true,
+        "gamma_cosmopolitan": -5.156,
+        "estimate_beta_n_flag": false,
+        "beta_network": 0.8
+      },
+      "de_calibration_moments": {
+        "wealth_gini": 0.9118936541348173,
+        "top_1_wealth_share": 0.6531855795048985,
+        "top_10_wealth_share": 0.8602532458130403,
+        "bottom_50_wealth_share": 0.008159385079211046,
+        "homeownership_rate": 0.45940666666666663,
+        "aggregate_price_growth_15y": 1.1244893940547285,
+        "cross_regional_price_growth_sd": 0.37106670085887294,
+        "price_growth_supply_elasticity_correlation": -0.8472082970168102,
+        "aggregate_extreme_share_final": 0.21734666666666666,
+        "extreme_share_year_5": 0.09654,
+        "extreme_share_year_10": 0.16493666666666668,
+        "cross_regional_extreme_share_dispersion": 0.0594890638801772
+      },
+      "de_validation_moments": {
+        "within_region_renter_owner_vote_gap": 0.3095623086582167,
+        "cross_regional_extreme_share_price_growth_correlation": -0.8130601253749561,
+        "cross_regional_extreme_share_price_growth_partial_correlation_income": -0.0521678589641992,
+        "bottom_quartile_wage_growth_2010_2025": 0.20794291637277668,
+        "uk_brexit_region_price_growth_correlation": NaN
+      },
+      "uk_metrics": {
+        "uk_aggregate_leave": 0.17864333333333335,
+        "uk_cleavage": 0.25295845952023105,
+        "uk_dispersion": 0.06298211009269368
+      },
+      "fit_n": 5,
+      "fit_total": 12,
+      "fit_rows": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.9118936541348173,
+          "error": 0.10189365413481721,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.6531855795048985,
+          "error": 0.40318557950489853,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.8602532458130403,
+          "error": 0.2602532458130403,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.008159385079211046,
+          "error": -0.021840614920788953,
+          "tolerance": 0.02,
+          "passed": false
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.45940666666666663,
+          "error": -0.04059333333333337,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 1.1244893940547285,
+          "error": 0.32448939405472843,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.37106670085887294,
+          "error": -0.12893329914112706,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.8472082970168102,
+          "error": -0.14720829701681026,
+          "tolerance": 0.15,
+          "passed": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.21734666666666666,
+          "error": 0.00934666666666667,
+          "tolerance": 0.01,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.09654,
+          "error": -0.0034600000000000047,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.16493666666666668,
+          "error": 0.014936666666666681,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.0594890638801772,
+          "error": -0.020510936119822805,
+          "tolerance": 0.03,
+          "passed": true
+        }
+      ],
+      "summary": {
+        "aggregate_afd_de": 0.21734666666666666,
+        "de_cleavage": 0.3095623086582167,
+        "de_dispersion": 0.0594890638801772,
+        "uk_cleavage": 0.25295845952023105,
+        "uk_dispersion": 0.06298211009269368,
+        "fit_fraction": "5/12"
+      },
+      "notes": [],
+      "elapsed_seconds": 26.539567947387695
+    },
+    {
+      "cell": "7d_all_three_beta_n_1.0",
+      "spec": {
+        "assortative_help": true,
+        "gamma_cosmopolitan": -5.156,
+        "estimate_beta_n_flag": false,
+        "beta_network": 1.0
+      },
+      "de_calibration_moments": {
+        "wealth_gini": 0.9118936541348173,
+        "top_1_wealth_share": 0.6531855795048985,
+        "top_10_wealth_share": 0.8602532458130403,
+        "bottom_50_wealth_share": 0.008159385079211046,
+        "homeownership_rate": 0.45940666666666663,
+        "aggregate_price_growth_15y": 1.1244893940547285,
+        "cross_regional_price_growth_sd": 0.37106670085887294,
+        "price_growth_supply_elasticity_correlation": -0.8472082970168102,
+        "aggregate_extreme_share_final": 0.22121666666666667,
+        "extreme_share_year_5": 0.09770999999999999,
+        "extreme_share_year_10": 0.16749333333333333,
+        "cross_regional_extreme_share_dispersion": 0.061416578064296914
+      },
+      "de_validation_moments": {
+        "within_region_renter_owner_vote_gap": 0.3139251525362449,
+        "cross_regional_extreme_share_price_growth_correlation": -0.8135004729404371,
+        "cross_regional_extreme_share_price_growth_partial_correlation_income": -0.05663503309810203,
+        "bottom_quartile_wage_growth_2010_2025": 0.20794291637277668,
+        "uk_brexit_region_price_growth_correlation": NaN
+      },
+      "uk_metrics": {
+        "uk_aggregate_leave": 0.18185666666666667,
+        "uk_cleavage": 0.25613313864172,
+        "uk_dispersion": 0.06462204854049375
+      },
+      "fit_n": 4,
+      "fit_total": 12,
+      "fit_rows": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.9118936541348173,
+          "error": 0.10189365413481721,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.6531855795048985,
+          "error": 0.40318557950489853,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.8602532458130403,
+          "error": 0.2602532458130403,
+          "tolerance": 0.05,
+          "passed": false
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.008159385079211046,
+          "error": -0.021840614920788953,
+          "tolerance": 0.02,
+          "passed": false
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.45940666666666663,
+          "error": -0.04059333333333337,
+          "tolerance": 0.03,
+          "passed": false
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 1.1244893940547285,
+          "error": 0.32448939405472843,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.37106670085887294,
+          "error": -0.12893329914112706,
+          "tolerance": 0.1,
+          "passed": false
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.8472082970168102,
+          "error": -0.14720829701681026,
+          "tolerance": 0.15,
+          "passed": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.22121666666666667,
+          "error": 0.013216666666666682,
+          "tolerance": 0.01,
+          "passed": false
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.09770999999999999,
+          "error": -0.0022900000000000142,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.16749333333333333,
+          "error": 0.017493333333333333,
+          "tolerance": 0.03,
+          "passed": true
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.061416578064296914,
+          "error": -0.018583421935703087,
+          "tolerance": 0.03,
+          "passed": true
+        }
+      ],
+      "summary": {
+        "aggregate_afd_de": 0.22121666666666667,
+        "de_cleavage": 0.3139251525362449,
+        "de_dispersion": 0.061416578064296914,
+        "uk_cleavage": 0.25613313864172,
+        "uk_dispersion": 0.06462204854049375,
+        "fit_fraction": "4/12"
+      },
+      "notes": [
+        "fit fraction below 5/12: 4/12"
+      ],
+      "elapsed_seconds": 26.697027921676636
+    }
+  ],
+  "haywire_flags": [
+    "2_assortative_help: fit = 4/12",
+    "7d_all_three_beta_n_1.0: fit = 4/12"
+  ],
+  "elapsed_seconds": 266.4756889343262
+}

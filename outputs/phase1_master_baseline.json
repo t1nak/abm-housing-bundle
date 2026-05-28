@@ -1,0 +1,23 @@
+{
+  "cal5": {
+    "wealth_gini": 0.7830946184568573,
+    "top_1_wealth_share": 0.25513084016214516,
+    "top_10_wealth_share": 0.6390250283738318,
+    "bottom_50_wealth_share": 0.02452921564997056,
+    "homeownership_rate": 0.48166666666666663,
+    "aggregate_price_growth_15y": 0.6505784343691206,
+    "cross_regional_price_growth_sd": 0.45417652615127313,
+    "price_growth_supply_elasticity_correlation": -0.6964345451322704,
+    "aggregate_extreme_share_final": 0.20929999999999999,
+    "extreme_share_year_5": 0.09515333333333334,
+    "extreme_share_year_10": 0.16174,
+    "cross_regional_extreme_share_dispersion": 0.05059617978204223
+  },
+  "val5": {
+    "within_region_renter_owner_vote_gap": 0.27971068973317276,
+    "cross_regional_extreme_share_price_growth_correlation": -0.6778168755663615,
+    "cross_regional_extreme_share_price_growth_partial_correlation_income": 0.39150230533893315,
+    "bottom_quartile_wage_growth_2010_2025": 0.20956316155491597,
+    "uk_brexit_region_price_growth_correlation": null
+  }
+}

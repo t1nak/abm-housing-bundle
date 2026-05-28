@@ -1,0 +1,210 @@
+{
+  "theta_hat": [
+    8.252515052738755,
+    0.2,
+    0.9,
+    0.2,
+    0.05792025732263979,
+    -5.43499415749763,
+    3.0,
+    0.85
+  ],
+  "de_land_by_model_region": [
+    "Hamburg",
+    "Hessen",
+    "Bayern",
+    "Baden-Wuerttemberg",
+    "Berlin",
+    "Bremen",
+    "Nordrhein-Westfalen",
+    "Niedersachsen",
+    "Schleswig-Holstein",
+    "Rheinland-Pfalz",
+    "Saarland",
+    "Sachsen",
+    "Brandenburg",
+    "Thueringen",
+    "Sachsen-Anhalt",
+    "Mecklenburg-Vorpommern"
+  ],
+  "uk_region_by_model_region": [
+    "Greater London",
+    "South East",
+    "East of England",
+    "South West",
+    "Scotland",
+    "North West",
+    "West Midlands",
+    "East Midlands",
+    "Yorkshire and Humber",
+    "Northern Ireland",
+    "North East",
+    "Wales"
+  ],
+  "grad_share_de": [
+    0.34,
+    0.3,
+    0.3,
+    0.29,
+    0.37,
+    0.29,
+    0.26,
+    0.26,
+    0.26,
+    0.25,
+    0.25,
+    0.28,
+    0.28,
+    0.27,
+    0.24,
+    0.24
+  ],
+  "grad_share_uk": [
+    0.52,
+    0.4,
+    0.36,
+    0.37,
+    0.4,
+    0.33,
+    0.31,
+    0.3,
+    0.3,
+    0.32,
+    0.29,
+    0.32
+  ],
+  "afd_2025_by_model_region": [
+    0.1,
+    0.17,
+    0.2,
+    0.18,
+    0.15,
+    0.13,
+    0.16,
+    0.15,
+    0.13,
+    0.2,
+    0.22,
+    0.34,
+    0.32,
+    0.34,
+    0.34,
+    0.34
+  ],
+  "leave_2016_by_model_region": [
+    0.402,
+    0.518,
+    0.566,
+    0.527,
+    0.38,
+    0.535,
+    0.594,
+    0.587,
+    0.578,
+    0.44,
+    0.581,
+    0.525
+  ],
+  "target_differential_de": 0.19000000000000003,
+  "target_differential_uk": 0.17899999999999994,
+  "control_de": {
+    "partial_corr": 0.45477945424926886,
+    "cleavage": 0.26635198179527625,
+    "dispersion": 0.05195229704912828,
+    "aggregate_vote": 0.20001333333333332,
+    "differential_low_minus_high_grad": 0.09919867748521605
+  },
+  "control_uk": {
+    "partial_corr": 0.3021721908689027,
+    "cleavage": 0.22935205385171037,
+    "dispersion": 0.04221099944328775,
+    "aggregate_vote": 0.17554666666666666,
+    "differential_low_minus_high_grad": 0.13660952054417722
+  },
+  "pilot_de_country_specific": {
+    "gamma": -7.5,
+    "partial_corr": 0.26923910545185803,
+    "cleavage": 0.26598477968490375,
+    "dispersion": 0.06863939568587316,
+    "aggregate_vote": 0.19963999999999998,
+    "differential_low_minus_high_grad": 0.19054886438900703
+  },
+  "pilot_uk_country_specific": {
+    "gamma": -2.8125,
+    "partial_corr": 0.2578124968722909,
+    "cleavage": 0.2290211986342836,
+    "dispersion": 0.05466062080552451,
+    "aggregate_vote": 0.17557666666666666,
+    "differential_low_minus_high_grad": 0.18111778558316527
+  },
+  "pilot_de_shared_gamma": {
+    "gamma": -5.15625,
+    "partial_corr": 0.318164519706542,
+    "cleavage": 0.2659171601987182,
+    "dispersion": 0.06300498095669395,
+    "aggregate_vote": 0.19961333333333334,
+    "differential_low_minus_high_grad": 0.1640176618568679
+  },
+  "pilot_uk_shared_gamma": {
+    "gamma": -5.15625,
+    "partial_corr": 0.2317369902863049,
+    "cleavage": 0.22960952693003503,
+    "dispersion": 0.06446330257155147,
+    "aggregate_vote": 0.17615,
+    "differential_low_minus_high_grad": 0.21399887173627857
+  },
+  "gamma_de": -7.5,
+  "gamma_uk": -2.8125,
+  "gamma_shared": -5.15625,
+  "bisection_history_de": [
+    {
+      "gamma": -30.0,
+      "diff": 0.407416251239477
+    },
+    {
+      "gamma": 0.0,
+      "diff": 0.0972203607387089
+    },
+    {
+      "gamma": -15.0,
+      "diff": 0.27645244402755165
+    },
+    {
+      "gamma": -7.5,
+      "diff": 0.1875225531101617
+    }
+  ],
+  "bisection_history_uk": [
+    {
+      "gamma": -30.0,
+      "diff": 0.4547572295612483
+    },
+    {
+      "gamma": 0.0,
+      "diff": 0.13326403003000592
+    },
+    {
+      "gamma": -15.0,
+      "diff": 0.3255223973327257
+    },
+    {
+      "gamma": -7.5,
+      "diff": 0.24038953821707382
+    },
+    {
+      "gamma": -3.75,
+      "diff": 0.19081468331951973
+    },
+    {
+      "gamma": -1.875,
+      "diff": 0.16221417380708725
+    },
+    {
+      "gamma": -2.8125,
+      "diff": 0.17646203966826585
+    }
+  ],
+  "n_calibration_seeds": 5,
+  "n_final_seeds": 10,
+  "elapsed_seconds": 149.3805320262909
+}

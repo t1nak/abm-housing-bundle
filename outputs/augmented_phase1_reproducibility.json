@@ -1,0 +1,242 @@
+{
+  "theta_hat": [
+    8.252515052738755,
+    0.2,
+    0.9,
+    0.2,
+    0.05792025732263979,
+    -5.43499415749763,
+    3.0,
+    0.85
+  ],
+  "param_names": [
+    "beta_dissat",
+    "beta_renter",
+    "rho_aspiration",
+    "alpha_local",
+    "price_slope",
+    "beta_0",
+    "assortative_exponent",
+    "intergenerational_skill_corr"
+  ],
+  "seeds_10": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82
+  ],
+  "seeds_5": [
+    73,
+    74,
+    75,
+    76,
+    77
+  ],
+  "calibration_10seed": {
+    "wealth_gini": 0.7823122154660549,
+    "top_1_wealth_share": 0.25180914620693795,
+    "top_10_wealth_share": 0.6377551845473673,
+    "bottom_50_wealth_share": 0.0245581862284539,
+    "homeownership_rate": 0.4811799999999999,
+    "aggregate_price_growth_15y": 0.6611729558992431,
+    "cross_regional_price_growth_sd": 0.44079542127665006,
+    "price_growth_supply_elasticity_correlation": -0.6950455638197834,
+    "aggregate_extreme_share_final": 0.20861666666666667,
+    "extreme_share_year_5": 0.09499333333333333,
+    "extreme_share_year_10": 0.16177333333333332,
+    "cross_regional_extreme_share_dispersion": 0.051422628259935134
+  },
+  "validation_10seed": {
+    "within_region_renter_owner_vote_gap": 0.27820419672733465,
+    "cross_regional_extreme_share_price_growth_correlation": -0.6606771835769578,
+    "cross_regional_extreme_share_price_growth_partial_correlation_income": 0.4508723157942387,
+    "bottom_quartile_wage_growth_2010_2025": 0.20855605435529584,
+    "uk_brexit_region_price_growth_correlation": NaN
+  },
+  "table4_fit_fraction": "11/12",
+  "aggregate_afd_10seed": 0.20861666666666667,
+  "cleavage_10seed": 0.27820419672733465,
+  "dispersion_10seed": 0.051422628259935134,
+  "rows_10seed": [
+    {
+      "name": "wealth_gini",
+      "target": 0.81,
+      "model": 0.7823122154660549,
+      "error": -0.02768778453394516,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "top_1_wealth_share",
+      "target": 0.25,
+      "model": 0.25180914620693795,
+      "error": 0.0018091462069379505,
+      "tolerance": 0.05,
+      "passed": true
+    },
+    {
+      "name": "top_10_wealth_share",
+      "target": 0.6,
+      "model": 0.6377551845473673,
+      "error": 0.03775518454736737,
+      "tolerance": 0.05,
+      "passed": true
+    },
+    {
+      "name": "bottom_50_wealth_share",
+      "target": 0.03,
+      "model": 0.0245581862284539,
+      "error": -0.005441813771546098,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "name": "homeownership_rate",
+      "target": 0.5,
+      "model": 0.4811799999999999,
+      "error": -0.018820000000000114,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "aggregate_price_growth_15y",
+      "target": 0.8,
+      "model": 0.6611729558992431,
+      "error": -0.13882704410075697,
+      "tolerance": 0.1,
+      "passed": false
+    },
+    {
+      "name": "cross_regional_price_growth_sd",
+      "target": 0.5,
+      "model": 0.44079542127665006,
+      "error": -0.05920457872334994,
+      "tolerance": 0.1,
+      "passed": true
+    },
+    {
+      "name": "price_growth_supply_elasticity_correlation",
+      "target": -0.7,
+      "model": -0.6950455638197834,
+      "error": 0.004954436180216515,
+      "tolerance": 0.15,
+      "passed": true
+    },
+    {
+      "name": "aggregate_extreme_share_final",
+      "target": 0.208,
+      "model": 0.20861666666666667,
+      "error": 0.000616666666666682,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "extreme_share_year_5",
+      "target": 0.1,
+      "model": 0.09499333333333333,
+      "error": -0.005006666666666673,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "extreme_share_year_10",
+      "target": 0.15,
+      "model": 0.16177333333333332,
+      "error": 0.01177333333333333,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "cross_regional_extreme_share_dispersion",
+      "target": 0.08,
+      "model": 0.051422628259935134,
+      "error": -0.028577371740064868,
+      "tolerance": 0.03,
+      "passed": true
+    }
+  ],
+  "bitcheck_5seed": [
+    {
+      "name": "wealth_gini",
+      "baseline": 0.7830946184568573,
+      "phase1": 0.7830946184568573,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "top_1_wealth_share",
+      "baseline": 0.25513084016214516,
+      "phase1": 0.25513084016214516,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "top_10_wealth_share",
+      "baseline": 0.6390250283738318,
+      "phase1": 0.6390250283738318,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "bottom_50_wealth_share",
+      "baseline": 0.02452921564997056,
+      "phase1": 0.02452921564997056,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "homeownership_rate",
+      "baseline": 0.48166666666666663,
+      "phase1": 0.48166666666666663,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "aggregate_price_growth_15y",
+      "baseline": 0.6505784343691206,
+      "phase1": 0.6505784343691206,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "cross_regional_price_growth_sd",
+      "baseline": 0.45417652615127313,
+      "phase1": 0.45417652615127313,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "price_growth_supply_elasticity_correlation",
+      "baseline": -0.6964345451322704,
+      "phase1": -0.6964345451322704,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "aggregate_extreme_share_final",
+      "baseline": 0.20929999999999999,
+      "phase1": 0.20929999999999999,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "extreme_share_year_5",
+      "baseline": 0.09515333333333334,
+      "phase1": 0.09515333333333334,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "extreme_share_year_10",
+      "baseline": 0.16174,
+      "phase1": 0.16174,
+      "abs_diff": 0.0
+    },
+    {
+      "name": "cross_regional_extreme_share_dispersion",
+      "baseline": 0.05059617978204223,
+      "phase1": 0.05059617978204223,
+      "abs_diff": 0.0
+    }
+  ],
+  "bitcheck_baseline_source": "phase1_master_baseline.json",
+  "max_abs_diff_5seed_vs_baseline": 0.0,
+  "bitcheck_passed": true,
+  "elapsed_seconds": 19.95477318763733
+}

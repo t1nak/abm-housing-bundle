@@ -1,0 +1,116 @@
+{
+  "result": {
+    "aggregate_leave_share": 0.17562000000000003,
+    "aggregate_leave_share_sd": 0.0009867454923467662,
+    "cross_regional_leave_price_correlation": -0.35718884000318657,
+    "cross_regional_leave_price_partial_correlation": 0.3577341481353956,
+    "within_region_renter_owner_gap": 0.23037956399778453,
+    "within_region_renter_owner_gap_sd": 0.007600340209317939,
+    "aggregate_price_growth_to_brexit": 0.08717308732296876,
+    "cross_regional_dispersion": 0.041287758455098675,
+    "regional_leave_model": {
+      "Greater London": 0.09599980339147011,
+      "South East": 0.1441940904998546,
+      "East of England": 0.16271844697629598,
+      "South West": 0.170983100459031,
+      "Scotland": 0.1722799311394741,
+      "North West": 0.19166811379562848,
+      "West Midlands": 0.20754618870702313,
+      "East Midlands": 0.20635021127969044,
+      "Yorkshire and Humber": 0.20880346313319023,
+      "Northern Ireland": 0.20761054461495054,
+      "North East": 0.22926383342147605,
+      "Wales": 0.24419584208869177
+    },
+    "regional_leave_empirical": {
+      "Greater London": 0.402,
+      "South East": 0.518,
+      "East of England": 0.566,
+      "South West": 0.527,
+      "Scotland": 0.38,
+      "North West": 0.535,
+      "West Midlands": 0.594,
+      "East Midlands": 0.587,
+      "Yorkshire and Humber": 0.578,
+      "Northern Ireland": 0.44,
+      "North East": 0.581,
+      "Wales": 0.525
+    },
+    "brexit_period": 11,
+    "n_seeds": 5,
+    "n_periods": 14
+  },
+  "scored": {
+    "aggregate_leave_share": {
+      "target": 0.518,
+      "model": 0.17562000000000003,
+      "acceptance_range": [
+        0.45,
+        0.55
+      ],
+      "passed": false
+    },
+    "cross_regional_leave_price_correlation": {
+      "target": -0.2,
+      "model": 0.3577341481353956,
+      "model_raw_correlation": -0.35718884000318657,
+      "acceptance_range": [
+        -0.3,
+        -0.1
+      ],
+      "passed": false
+    },
+    "within_region_renter_owner_gap": {
+      "target": 0.15,
+      "model": 0.23037956399778453,
+      "acceptance_range": [
+        0.1,
+        Infinity
+      ],
+      "passed": true
+    }
+  },
+  "german_tensions": {
+    "aggregate_extreme_share_final": {
+      "target": 0.208,
+      "model": 0.2093
+    },
+    "cross_regional_extreme_share_dispersion": {
+      "target": 0.08,
+      "model": 0.0492
+    },
+    "aggregate_price_growth_15y": {
+      "target": 0.8,
+      "model": 0.657
+    },
+    "within_region_renter_owner_vote_gap": {
+      "target": 0.15,
+      "model": 0.28
+    }
+  },
+  "empirical_aggregate_leave": 0.518,
+  "empirical_leave_by_region": {
+    "Greater London": 0.402,
+    "South East": 0.518,
+    "East of England": 0.566,
+    "South West": 0.527,
+    "Scotland": 0.38,
+    "North West": 0.535,
+    "West Midlands": 0.594,
+    "East Midlands": 0.587,
+    "Yorkshire and Humber": 0.578,
+    "Northern Ireland": 0.44,
+    "North East": 0.581,
+    "Wales": 0.525
+  },
+  "smm_parameters_held_fixed": {
+    "beta_dissat": 8.252515052738755,
+    "beta_renter": 0.2,
+    "rho_aspiration": 0.9,
+    "alpha_local": 0.2,
+    "price_slope": 0.05792025732263979,
+    "beta_0": -5.43499415749763,
+    "assortative_exponent": 3.0,
+    "intergenerational_skill_corr": 0.85
+  }
+}

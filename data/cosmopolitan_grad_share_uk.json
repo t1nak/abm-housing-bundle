@@ -1,0 +1,41 @@
+{
+  "country": "United Kingdom",
+  "source": "ONS Annual Population Survey, share of working-age population (16 to 64) with NVQ4+ qualifications, by NUTS-1 region.",
+  "vintage": "2016",
+  "vintage_status": "approximation: published aggregates used; not pulled from Nomis API for this pilot. The replication package will pin the exact APS dataset extract.",
+  "unit": "share of working-age population with NVQ4+ qualification",
+  "geography": "12 NUTS-1 regions, ordered to match src/abmhp/validation/uk.py:UK_REGION_NAMES",
+  "values": {
+    "Greater London": 0.52,
+    "South East": 0.40,
+    "East of England": 0.36,
+    "South West": 0.37,
+    "Scotland": 0.40,
+    "North West": 0.33,
+    "West Midlands": 0.31,
+    "East Midlands": 0.30,
+    "Yorkshire and Humber": 0.30,
+    "Northern Ireland": 0.32,
+    "North East": 0.29,
+    "Wales": 0.32
+  },
+  "leave_2016_share_by_region": {
+    "_provenance": "Electoral Commission, official 23 June 2016 EU referendum results aggregated to NUTS-1 (same vector used in src/abmhp/validation/uk.py:EMPIRICAL_LEAVE_BY_REGION).",
+    "Greater London": 0.402,
+    "South East": 0.518,
+    "East of England": 0.566,
+    "South West": 0.527,
+    "Scotland": 0.380,
+    "North West": 0.535,
+    "West Midlands": 0.594,
+    "East Midlands": 0.587,
+    "Yorkshire and Humber": 0.578,
+    "Northern Ireland": 0.440,
+    "North East": 0.581,
+    "Wales": 0.525
+  },
+  "high_grad_region": "Greater London",
+  "low_grad_region": "North East",
+  "empirical_differential_low_minus_high_grad": 0.179,
+  "differential_note": "Differential = Leave(low-graduate region) minus Leave(high-graduate region) = 0.581 (North East) - 0.402 (Greater London) = +0.179."
+}

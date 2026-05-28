@@ -1,0 +1,438 @@
+{
+  "phase": "3_reduced_budget",
+  "budget": {
+    "n_first_stage": 60,
+    "n_second_stage": 30,
+    "n_variance_replications": 10,
+    "n_initial_points_stage1": 12,
+    "n_initial_points_stage2": 10,
+    "n_seeds_per_eval": 5
+  },
+  "base_cfg_flags": {
+    "assortative_help_enabled": true,
+    "p_assortative_help": 0.05,
+    "f_assortative_help": 0.15,
+    "assortative_help_wealth_lower_factor": 0.2,
+    "assortative_help_donor_min_age": 55.0,
+    "grad_share_data_path": "data/cosmopolitan_grad_share_de.json"
+  },
+  "param_space_bounds": [
+    {
+      "name": "beta_dissat",
+      "low": 3.0,
+      "high": 9.0
+    },
+    {
+      "name": "beta_renter",
+      "low": 0.2,
+      "high": 1.0
+    },
+    {
+      "name": "rho_aspiration",
+      "low": 0.4,
+      "high": 0.9
+    },
+    {
+      "name": "alpha_local",
+      "low": 0.2,
+      "high": 0.7
+    },
+    {
+      "name": "price_slope",
+      "low": 0.04,
+      "high": 0.15
+    },
+    {
+      "name": "beta_0",
+      "low": -7.0,
+      "high": -3.0
+    },
+    {
+      "name": "assortative_exponent",
+      "low": 1.5,
+      "high": 3.0
+    },
+    {
+      "name": "intergenerational_skill_corr",
+      "low": 0.3,
+      "high": 0.85
+    },
+    {
+      "name": "beta_network",
+      "low": 0.3,
+      "high": 1.5
+    },
+    {
+      "name": "gamma_cosmopolitan",
+      "low": -15.0,
+      "high": 5.0
+    }
+  ],
+  "x0_warm_start": [
+    8.252515052738755,
+    0.2,
+    0.9,
+    0.2,
+    0.05792025732263979,
+    -5.43499415749763,
+    3.0,
+    0.85,
+    0.6,
+    -5.156
+  ],
+  "theta_hat": [
+    9.0,
+    0.2,
+    0.9,
+    0.2,
+    0.09900210904217,
+    -6.051995085636928,
+    3.0,
+    0.32429728593216917,
+    0.7748864663379047,
+    -3.9649453374738073
+  ],
+  "se": [
+    0.025471444141961872,
+    0.06682653621439383,
+    0.0007329102607090082,
+    0.008909694224844162,
+    0.002411876184596114,
+    0.04181891207221609,
+    0.00954308139146189,
+    0.007188867862725905,
+    0.014071899563131622,
+    0.0012046196645828463
+  ],
+  "param_names": [
+    "beta_dissat",
+    "beta_renter",
+    "rho_aspiration",
+    "alpha_local",
+    "price_slope",
+    "beta_0",
+    "assortative_exponent",
+    "intergenerational_skill_corr",
+    "beta_network",
+    "gamma_cosmopolitan"
+  ],
+  "j_statistic": 1419.1805200009649,
+  "dof": 2,
+  "p_value": 0.0,
+  "moment_names": [
+    "wealth_gini",
+    "top_1_wealth_share",
+    "top_10_wealth_share",
+    "bottom_50_wealth_share",
+    "homeownership_rate",
+    "aggregate_price_growth_15y",
+    "cross_regional_price_growth_sd",
+    "price_growth_supply_elasticity_correlation",
+    "aggregate_extreme_share_final",
+    "extreme_share_year_5",
+    "extreme_share_year_10",
+    "cross_regional_extreme_share_dispersion"
+  ],
+  "moment_targets": [
+    0.81,
+    0.25,
+    0.6,
+    0.03,
+    0.5,
+    0.8,
+    0.5,
+    -0.7,
+    0.208,
+    0.1,
+    0.15,
+    0.08
+  ],
+  "moment_at_optimum": [
+    0.8005620561157218,
+    0.2797336039482886,
+    0.6647791968894413,
+    0.01935165943413616,
+    0.47032666666666667,
+    0.9242354951321312,
+    0.5011384563649696,
+    -0.8127448893280803,
+    0.2018866666666667,
+    0.08144,
+    0.14726,
+    0.05712185311146286
+  ],
+  "moment_residuals": [
+    -0.00943794388427821,
+    0.02973360394828861,
+    0.06477919688944134,
+    -0.010648340565863838,
+    -0.02967333333333333,
+    0.12423549513213117,
+    0.0011384563649695645,
+    -0.11274488932808036,
+    -0.006113333333333304,
+    -0.018560000000000007,
+    -0.0027399999999999924,
+    -0.02287814688853714
+  ],
+  "moment_weights": [
+    0.08,
+    0.08,
+    0.07,
+    0.06,
+    0.06,
+    0.1,
+    0.08,
+    0.07,
+    0.18,
+    0.06,
+    0.06,
+    0.1
+  ],
+  "moment_tolerances": [
+    0.03,
+    0.05,
+    0.05,
+    0.02,
+    0.03,
+    0.1,
+    0.1,
+    0.15,
+    0.01,
+    0.03,
+    0.03,
+    0.03
+  ],
+  "fit_rows": [
+    {
+      "name": "wealth_gini",
+      "target": 0.81,
+      "model": 0.8005620561157218,
+      "error": -0.00943794388427821,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "top_1_wealth_share",
+      "target": 0.25,
+      "model": 0.2797336039482886,
+      "error": 0.02973360394828861,
+      "tolerance": 0.05,
+      "passed": true
+    },
+    {
+      "name": "top_10_wealth_share",
+      "target": 0.6,
+      "model": 0.6647791968894413,
+      "error": 0.06477919688944134,
+      "tolerance": 0.05,
+      "passed": false
+    },
+    {
+      "name": "bottom_50_wealth_share",
+      "target": 0.03,
+      "model": 0.01935165943413616,
+      "error": -0.010648340565863838,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "name": "homeownership_rate",
+      "target": 0.5,
+      "model": 0.47032666666666667,
+      "error": -0.02967333333333333,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "aggregate_price_growth_15y",
+      "target": 0.8,
+      "model": 0.9242354951321312,
+      "error": 0.12423549513213117,
+      "tolerance": 0.1,
+      "passed": false
+    },
+    {
+      "name": "cross_regional_price_growth_sd",
+      "target": 0.5,
+      "model": 0.5011384563649696,
+      "error": 0.0011384563649695645,
+      "tolerance": 0.1,
+      "passed": true
+    },
+    {
+      "name": "price_growth_supply_elasticity_correlation",
+      "target": -0.7,
+      "model": -0.8127448893280803,
+      "error": -0.11274488932808036,
+      "tolerance": 0.15,
+      "passed": true
+    },
+    {
+      "name": "aggregate_extreme_share_final",
+      "target": 0.208,
+      "model": 0.2018866666666667,
+      "error": -0.006113333333333304,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "extreme_share_year_5",
+      "target": 0.1,
+      "model": 0.08144,
+      "error": -0.018560000000000007,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "extreme_share_year_10",
+      "target": 0.15,
+      "model": 0.14726,
+      "error": -0.0027399999999999924,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "cross_regional_extreme_share_dispersion",
+      "target": 0.08,
+      "model": 0.05712185311146286,
+      "error": -0.02287814688853714,
+      "tolerance": 0.03,
+      "passed": true
+    }
+  ],
+  "fit_n": 10,
+  "fit_total": 12,
+  "validation": {
+    "within_region_renter_owner_vote_gap": {
+      "target": 0.15,
+      "model": 0.2985668508031735,
+      "error": 0.14856685080317353,
+      "tolerance": 0.05,
+      "passed": false
+    },
+    "cross_regional_extreme_share_price_growth_correlation": {
+      "target": -0.6,
+      "model": -0.7121019479558812,
+      "error": -0.11210194795588124,
+      "tolerance": 0.2,
+      "passed": true
+    },
+    "cross_regional_extreme_share_price_growth_partial_correlation_income": {
+      "target": -0.2,
+      "model": 0.3391341709376857,
+      "error": 0.5391341709376858,
+      "tolerance": 0.3,
+      "passed": false
+    },
+    "bottom_quartile_wage_growth_2010_2025": {
+      "target": 0.04,
+      "model": 0.14412754112596246,
+      "error": 0.10412754112596245,
+      "tolerance": 0.05,
+      "passed": false
+    },
+    "uk_brexit_region_price_growth_correlation": {
+      "target": -0.2,
+      "model": NaN,
+      "error": NaN,
+      "tolerance": 0.15,
+      "passed": false
+    }
+  },
+  "stage1_path_y": [
+    220.62082244369384,
+    128052.89770495948,
+    1660.0924068697755,
+    4966.598493750027,
+    683.4373831406247,
+    10766.021479819781,
+    36513.92686775027,
+    489.3674781204078,
+    7416.265835843507,
+    35472.06193815075,
+    31871.160971472204,
+    684.4274387202305,
+    1157.447367755263,
+    1743.4004553439631,
+    7398.240391915752,
+    968.3879613542063,
+    1010.5471367009629,
+    5197.723625340855,
+    679.7263949839542,
+    1164.001123250179,
+    1091.3876207111985,
+    1932.7408006208052,
+    21723.934019937875,
+    3003.366638036933,
+    482.31597244333904,
+    7798.012195661906,
+    1150.9515818113673,
+    1509.3384086661858,
+    348.6442029786428,
+    2424.9508245409893,
+    1031.184274566076,
+    1062.0626523192986,
+    1122.177876878758,
+    1490.5746032400039,
+    6951.613628805331,
+    340.09485930173713,
+    6190.585201685195,
+    808.040491131569,
+    526.4922553689796,
+    1039.2844154205345,
+    1373.342376571333,
+    956.3622807938303,
+    1056.6558350929552,
+    234.20942573913538,
+    1097.7041344051206,
+    970.9157717071796,
+    1080.6117886625475,
+    1048.9760442845804,
+    519.2112262244627,
+    2801.765294425742,
+    298.70111682468723,
+    1240.7117021164263,
+    853.6292338341808,
+    360.3661729904225,
+    1127.2482705903155,
+    348.0559126042376,
+    952.435265457056,
+    671.1125655446556,
+    1461.2028267763108,
+    292.8916134731537
+  ],
+  "stage2_path_y": [
+    4460.503351089746,
+    280017.5298079596,
+    292293.863321084,
+    443162.0929413976,
+    714609.3931784787,
+    174610.002265274,
+    138313.04876661394,
+    2870128.3378177155,
+    2561754.1980376765,
+    132378.87196564104,
+    123575.90418015553,
+    315299.9511288083,
+    773859.6771720727,
+    306416.2833966156,
+    2872.3384690150033,
+    125579.34116798369,
+    6240.062625870858,
+    4085.2439021185965,
+    45814.72387998467,
+    12843.7877471853,
+    6778.448120911133,
+    2840.092326909516,
+    1419.1805200009649,
+    3903.0938012589904,
+    51904.54301535046,
+    8960.239164582534,
+    76841.41703937767,
+    5345.391720332622,
+    2626.753363721602,
+    8054.955787461486
+  ],
+  "elapsed_seconds": 1039.3668630123138
+}

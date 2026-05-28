@@ -1,0 +1,89 @@
+{
+  "phase": "4_uk_augmented",
+  "theta_hat": [
+    9.0,
+    0.2,
+    0.9,
+    0.2,
+    0.09900210904217,
+    -6.051995085636928,
+    3.0,
+    0.32429728593216917,
+    0.7748864663379047,
+    -3.9649453374738073
+  ],
+  "param_names": [
+    "beta_dissat",
+    "beta_renter",
+    "rho_aspiration",
+    "alpha_local",
+    "price_slope",
+    "beta_0",
+    "assortative_exponent",
+    "intergenerational_skill_corr",
+    "beta_network",
+    "gamma_cosmopolitan"
+  ],
+  "uk_seeds": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82
+  ],
+  "brexit_period": 11,
+  "aggregate_leave_share": 0.16032000000000002,
+  "aggregate_leave_share_sd": 0.002069842243645692,
+  "within_region_renter_owner_gap": 0.23744251294876925,
+  "within_region_renter_owner_gap_sd": 0.004954127728617744,
+  "cross_regional_dispersion": 0.05540885814881071,
+  "cross_regional_dispersion_sd": 0.0025612659471496006,
+  "regional_ordering_pearson_with_empirical": 0.5650153937647581,
+  "regional_ordering_spearman_with_empirical": 0.49650349650349657,
+  "regional_leave_model": {
+    "Greater London": 0.05866681399602698,
+    "South East": 0.11790298939034824,
+    "East of England": 0.14059190431769758,
+    "South West": 0.1490841845980939,
+    "Scotland": 0.14163422841571766,
+    "North West": 0.18090596718953864,
+    "West Midlands": 0.20224838516239946,
+    "East Midlands": 0.21390596002576578,
+    "Yorkshire and Humber": 0.21131519179609848,
+    "Northern Ireland": 0.21245447929569128,
+    "North East": 0.24269069311094055,
+    "Wales": 0.23518578879775767
+  },
+  "regional_leave_empirical": {
+    "Greater London": 0.402,
+    "South East": 0.518,
+    "East of England": 0.566,
+    "South West": 0.527,
+    "Scotland": 0.38,
+    "North West": 0.535,
+    "West Midlands": 0.594,
+    "East Midlands": 0.587,
+    "Yorkshire and Humber": 0.578,
+    "Northern Ireland": 0.44,
+    "North East": 0.581,
+    "Wales": 0.525
+  },
+  "empirical_aggregate_leave": 0.518,
+  "empirical_dispersion": 0.07347783627899246,
+  "original_comparison": {
+    "aggregate_leave_share": 0.1755866666666667,
+    "within_region_renter_owner_gap": 0.23047049586751817,
+    "cross_regional_dispersion": 0.04125525468241452,
+    "cross_regional_leave_price_partial_correlation": 0.3551801232478332
+  },
+  "config_flags": {
+    "assortative_help_enabled": true,
+    "grad_share_data_path": "data/cosmopolitan_grad_share_uk.json"
+  },
+  "elapsed_seconds": 11.310472965240479
+}

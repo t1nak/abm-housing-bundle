@@ -1,0 +1,1332 @@
+[
+  {
+    "variant": "control",
+    "description": "Original bounds at reduced budget; calibration anchor for the diagnostic.",
+    "bounds": {
+      "beta_dissat": [
+        3.0,
+        9.0
+      ],
+      "beta_renter": [
+        0.2,
+        1.0
+      ],
+      "rho_aspiration": [
+        0.4,
+        0.9
+      ],
+      "alpha_local": [
+        0.2,
+        0.7
+      ],
+      "price_slope": [
+        0.04,
+        0.15
+      ],
+      "beta_0": [
+        -7.0,
+        -3.0
+      ],
+      "assortative_exponent": [
+        1.5,
+        3.0
+      ],
+      "intergenerational_skill_corr": [
+        0.3,
+        0.85
+      ]
+    },
+    "theta_warm": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta1": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta_hat": [
+      8.245624932260299,
+      0.20642790676586795,
+      0.9,
+      0.2,
+      0.058657972450644906,
+      -5.504839099099201,
+      3.0,
+      0.8464388646041774
+    ],
+    "obj_stage1": 142.31253902015445,
+    "obj_stage2": 5206.782285813986,
+    "param_names": [
+      "beta_dissat",
+      "beta_renter",
+      "rho_aspiration",
+      "alpha_local",
+      "price_slope",
+      "beta_0",
+      "assortative_exponent",
+      "intergenerational_skill_corr"
+    ],
+    "binding_state": {
+      "beta_dissat": "interior",
+      "beta_renter": "low",
+      "rho_aspiration": "high",
+      "alpha_local": "low",
+      "price_slope": "interior",
+      "beta_0": "interior",
+      "assortative_exponent": "high",
+      "intergenerational_skill_corr": "high"
+    },
+    "calibration_moment_names": [
+      "wealth_gini",
+      "top_1_wealth_share",
+      "top_10_wealth_share",
+      "bottom_50_wealth_share",
+      "homeownership_rate",
+      "aggregate_price_growth_15y",
+      "cross_regional_price_growth_sd",
+      "price_growth_supply_elasticity_correlation",
+      "aggregate_extreme_share_final",
+      "extreme_share_year_5",
+      "extreme_share_year_10",
+      "cross_regional_extreme_share_dispersion"
+    ],
+    "calibration_targets": [
+      0.81,
+      0.25,
+      0.6,
+      0.03,
+      0.5,
+      0.8,
+      0.5,
+      -0.7,
+      0.208,
+      0.1,
+      0.15,
+      0.08
+    ],
+    "calibration_values": [
+      0.783436390762301,
+      0.2554696788670912,
+      0.6395703876406473,
+      0.02444664675825771,
+      0.48127333333333333,
+      0.6566009916673062,
+      0.45626169081206597,
+      -0.6988877095095635,
+      0.20297333333333337,
+      0.09104666666666666,
+      0.15581333333333336,
+      0.049242371668819
+    ],
+    "calibration_errors": [
+      -0.02656360923769907,
+      0.00546967886709121,
+      0.03957038764064735,
+      -0.00555335324174229,
+      -0.01872666666666667,
+      -0.1433990083326938,
+      -0.04373830918793403,
+      0.001112290490436485,
+      -0.005026666666666624,
+      -0.008953333333333341,
+      0.005813333333333365,
+      -0.030757628331181
+    ],
+    "calibration_within_tol": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "calibration_tolerances": [
+      0.03,
+      0.05,
+      0.05,
+      0.02,
+      0.03,
+      0.1,
+      0.1,
+      0.15,
+      0.01,
+      0.03,
+      0.03,
+      0.03
+    ],
+    "validation_renter_owner_gap": 0.27394218961900285,
+    "validation_price_growth_correlation": -0.6714307335776953,
+    "validation_bottom_quartile_wage_growth": 0.2091127266825205,
+    "budget": {
+      "n_first_stage": 40,
+      "n_second_stage": 20,
+      "n_variance_replications": 10,
+      "seeds": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    "elapsed_seconds": 601.8470571041107
+  },
+  {
+    "variant": "widen_beta_renter",
+    "description": "Renter premium low bound widened: 0.20 -> 0.00.",
+    "bounds": {
+      "beta_dissat": [
+        3.0,
+        9.0
+      ],
+      "beta_renter": [
+        0.0,
+        1.0
+      ],
+      "rho_aspiration": [
+        0.4,
+        0.9
+      ],
+      "alpha_local": [
+        0.2,
+        0.7
+      ],
+      "price_slope": [
+        0.04,
+        0.15
+      ],
+      "beta_0": [
+        -7.0,
+        -3.0
+      ],
+      "assortative_exponent": [
+        1.5,
+        3.0
+      ],
+      "intergenerational_skill_corr": [
+        0.3,
+        0.85
+      ]
+    },
+    "theta_warm": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta1": [
+      8.522915629154593,
+      0.11561115311597961,
+      0.9,
+      0.2,
+      0.04,
+      -5.467516913163614,
+      2.5846921530885405,
+      0.85
+    ],
+    "theta_hat": [
+      9.0,
+      0.13598226049718254,
+      0.9,
+      0.2,
+      0.0448116780644766,
+      -5.592883886281961,
+      2.822736703320433,
+      0.8497192988308435
+    ],
+    "obj_stage1": 139.70340443900596,
+    "obj_stage2": 2366.310303607753,
+    "param_names": [
+      "beta_dissat",
+      "beta_renter",
+      "rho_aspiration",
+      "alpha_local",
+      "price_slope",
+      "beta_0",
+      "assortative_exponent",
+      "intergenerational_skill_corr"
+    ],
+    "binding_state": {
+      "beta_dissat": "high",
+      "beta_renter": "interior",
+      "rho_aspiration": "high",
+      "alpha_local": "low",
+      "price_slope": "interior",
+      "beta_0": "interior",
+      "assortative_exponent": "interior",
+      "intergenerational_skill_corr": "high"
+    },
+    "calibration_moment_names": [
+      "wealth_gini",
+      "top_1_wealth_share",
+      "top_10_wealth_share",
+      "bottom_50_wealth_share",
+      "homeownership_rate",
+      "aggregate_price_growth_15y",
+      "cross_regional_price_growth_sd",
+      "price_growth_supply_elasticity_correlation",
+      "aggregate_extreme_share_final",
+      "extreme_share_year_5",
+      "extreme_share_year_10",
+      "cross_regional_extreme_share_dispersion"
+    ],
+    "calibration_targets": [
+      0.81,
+      0.25,
+      0.6,
+      0.03,
+      0.5,
+      0.8,
+      0.5,
+      -0.7,
+      0.208,
+      0.1,
+      0.15,
+      0.08
+    ],
+    "calibration_values": [
+      0.7761304850386935,
+      0.24053252951547982,
+      0.6278542260451,
+      0.025908550672733333,
+      0.48750666666666664,
+      0.5330195247697525,
+      0.40394195048168535,
+      -0.6510276581413018,
+      0.22580666666666666,
+      0.10447999999999999,
+      0.17772666666666667,
+      0.05698876875553406
+    ],
+    "calibration_errors": [
+      -0.033869514961306524,
+      -0.00946747048452018,
+      0.027854226045100017,
+      -0.004091449327266666,
+      -0.012493333333333356,
+      -0.2669804752302476,
+      -0.09605804951831465,
+      0.04897234185869814,
+      0.017806666666666665,
+      0.004479999999999984,
+      0.027726666666666677,
+      -0.02301123124446594
+    ],
+    "calibration_within_tol": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "calibration_tolerances": [
+      0.03,
+      0.05,
+      0.05,
+      0.02,
+      0.03,
+      0.1,
+      0.1,
+      0.15,
+      0.01,
+      0.03,
+      0.03,
+      0.03
+    ],
+    "validation_renter_owner_gap": 0.29563114626157666,
+    "validation_price_growth_correlation": -0.6441295723542503,
+    "validation_bottom_quartile_wage_growth": 0.20952762384120546,
+    "budget": {
+      "n_first_stage": 40,
+      "n_second_stage": 20,
+      "n_variance_replications": 10,
+      "seeds": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    "elapsed_seconds": 570.3454568386078
+  },
+  {
+    "variant": "widen_rho_aspiration",
+    "description": "Aspiration persistence high bound widened: 0.90 -> 0.99.",
+    "bounds": {
+      "beta_dissat": [
+        3.0,
+        9.0
+      ],
+      "beta_renter": [
+        0.2,
+        1.0
+      ],
+      "rho_aspiration": [
+        0.4,
+        0.99
+      ],
+      "alpha_local": [
+        0.2,
+        0.7
+      ],
+      "price_slope": [
+        0.04,
+        0.15
+      ],
+      "beta_0": [
+        -7.0,
+        -3.0
+      ],
+      "assortative_exponent": [
+        1.5,
+        3.0
+      ],
+      "intergenerational_skill_corr": [
+        0.3,
+        0.85
+      ]
+    },
+    "theta_warm": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta1": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta_hat": [
+      8.218740971866351,
+      0.20120048147460948,
+      0.8963071756295249,
+      0.2,
+      0.05807341092329857,
+      -5.4409575685937375,
+      3.0,
+      0.8491528449009305
+    ],
+    "obj_stage1": 142.31253902015445,
+    "obj_stage2": 5397.300412339415,
+    "param_names": [
+      "beta_dissat",
+      "beta_renter",
+      "rho_aspiration",
+      "alpha_local",
+      "price_slope",
+      "beta_0",
+      "assortative_exponent",
+      "intergenerational_skill_corr"
+    ],
+    "binding_state": {
+      "beta_dissat": "interior",
+      "beta_renter": "low",
+      "rho_aspiration": "interior",
+      "alpha_local": "low",
+      "price_slope": "interior",
+      "beta_0": "interior",
+      "assortative_exponent": "high",
+      "intergenerational_skill_corr": "high"
+    },
+    "calibration_moment_names": [
+      "wealth_gini",
+      "top_1_wealth_share",
+      "top_10_wealth_share",
+      "bottom_50_wealth_share",
+      "homeownership_rate",
+      "aggregate_price_growth_15y",
+      "cross_regional_price_growth_sd",
+      "price_growth_supply_elasticity_correlation",
+      "aggregate_extreme_share_final",
+      "extreme_share_year_5",
+      "extreme_share_year_10",
+      "cross_regional_extreme_share_dispersion"
+    ],
+    "calibration_targets": [
+      0.81,
+      0.25,
+      0.6,
+      0.03,
+      0.5,
+      0.8,
+      0.5,
+      -0.7,
+      0.208,
+      0.1,
+      0.15,
+      0.08
+    ],
+    "calibration_values": [
+      0.7832927596497858,
+      0.255435047850777,
+      0.6393798117964609,
+      0.024495119010427824,
+      0.4815533333333333,
+      0.6519420761495438,
+      0.45474119864505835,
+      -0.6971819316547733,
+      0.21006,
+      0.09685333333333333,
+      0.16302666666666665,
+      0.050624035533462085
+    ],
+    "calibration_errors": [
+      -0.026707240350214212,
+      0.005435047850776975,
+      0.039379811796460884,
+      -0.005504880989572174,
+      -0.018446666666666722,
+      -0.14805792385045624,
+      -0.04525880135494165,
+      0.0028180683452266875,
+      0.0020600000000000063,
+      -0.0031466666666666726,
+      0.013026666666666659,
+      -0.029375964466537917
+    ],
+    "calibration_within_tol": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "calibration_tolerances": [
+      0.03,
+      0.05,
+      0.05,
+      0.02,
+      0.03,
+      0.1,
+      0.1,
+      0.15,
+      0.01,
+      0.03,
+      0.03,
+      0.03
+    ],
+    "validation_renter_owner_gap": 0.2802239793262906,
+    "validation_price_growth_correlation": -0.6780178267210745,
+    "validation_bottom_quartile_wage_growth": 0.20945597795308482,
+    "budget": {
+      "n_first_stage": 40,
+      "n_second_stage": 20,
+      "n_variance_replications": 10,
+      "seeds": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    "elapsed_seconds": 543.6458382606506
+  },
+  {
+    "variant": "widen_alpha_local",
+    "description": "Local-reference share low bound widened: 0.20 -> 0.00.",
+    "bounds": {
+      "beta_dissat": [
+        3.0,
+        9.0
+      ],
+      "beta_renter": [
+        0.2,
+        1.0
+      ],
+      "rho_aspiration": [
+        0.4,
+        0.9
+      ],
+      "alpha_local": [
+        0.0,
+        0.7
+      ],
+      "price_slope": [
+        0.04,
+        0.15
+      ],
+      "beta_0": [
+        -7.0,
+        -3.0
+      ],
+      "assortative_exponent": [
+        1.5,
+        3.0
+      ],
+      "intergenerational_skill_corr": [
+        0.3,
+        0.85
+      ]
+    },
+    "theta_warm": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta1": [
+      8.475535473863397,
+      0.2,
+      0.9,
+      0.0,
+      0.04,
+      -5.659859195781696,
+      3.0,
+      0.5306448379678058
+    ],
+    "theta_hat": [
+      8.577671460686755,
+      0.2003085600600552,
+      0.899955608974495,
+      0.0,
+      0.04,
+      -5.611067602154435,
+      2.9997824012643735,
+      0.522834619724281
+    ],
+    "obj_stage1": 115.02091051929722,
+    "obj_stage2": 2062.0360976301235,
+    "param_names": [
+      "beta_dissat",
+      "beta_renter",
+      "rho_aspiration",
+      "alpha_local",
+      "price_slope",
+      "beta_0",
+      "assortative_exponent",
+      "intergenerational_skill_corr"
+    ],
+    "binding_state": {
+      "beta_dissat": "interior",
+      "beta_renter": "low",
+      "rho_aspiration": "high",
+      "alpha_local": "low",
+      "price_slope": "low",
+      "beta_0": "interior",
+      "assortative_exponent": "high",
+      "intergenerational_skill_corr": "interior"
+    },
+    "calibration_moment_names": [
+      "wealth_gini",
+      "top_1_wealth_share",
+      "top_10_wealth_share",
+      "bottom_50_wealth_share",
+      "homeownership_rate",
+      "aggregate_price_growth_15y",
+      "cross_regional_price_growth_sd",
+      "price_growth_supply_elasticity_correlation",
+      "aggregate_extreme_share_final",
+      "extreme_share_year_5",
+      "extreme_share_year_10",
+      "cross_regional_extreme_share_dispersion"
+    ],
+    "calibration_targets": [
+      0.81,
+      0.25,
+      0.6,
+      0.03,
+      0.5,
+      0.8,
+      0.5,
+      -0.7,
+      0.208,
+      0.1,
+      0.15,
+      0.08
+    ],
+    "calibration_values": [
+      0.7768283834350715,
+      0.24040831780198194,
+      0.6265664693090905,
+      0.02488600086693592,
+      0.4839533333333333,
+      0.4756046129289338,
+      0.3757512861762564,
+      -0.6266417047556001,
+      0.20904666666666666,
+      0.09664666666666667,
+      0.1626866666666667,
+      0.06459841806504886
+    ],
+    "calibration_errors": [
+      -0.03317161656492851,
+      -0.009591682198018064,
+      0.026566469309090568,
+      -0.005113999133064078,
+      -0.01604666666666671,
+      -0.32439538707106624,
+      -0.12424871382374358,
+      0.07335829524439985,
+      0.001046666666666668,
+      -0.003353333333333333,
+      0.012686666666666707,
+      -0.015401581934951142
+    ],
+    "calibration_within_tol": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "calibration_tolerances": [
+      0.03,
+      0.05,
+      0.05,
+      0.02,
+      0.03,
+      0.1,
+      0.1,
+      0.15,
+      0.01,
+      0.03,
+      0.03,
+      0.03
+    ],
+    "validation_renter_owner_gap": 0.2806215089263272,
+    "validation_price_growth_correlation": -0.6239241975248595,
+    "validation_bottom_quartile_wage_growth": 0.16878617438858293,
+    "budget": {
+      "n_first_stage": 40,
+      "n_second_stage": 20,
+      "n_variance_replications": 10,
+      "seeds": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    "elapsed_seconds": 539.591038942337
+  },
+  {
+    "variant": "widen_assortative_exponent",
+    "description": "Assortative-bequest exponent high bound widened: 3.0 -> 4.5.",
+    "bounds": {
+      "beta_dissat": [
+        3.0,
+        9.0
+      ],
+      "beta_renter": [
+        0.2,
+        1.0
+      ],
+      "rho_aspiration": [
+        0.4,
+        0.9
+      ],
+      "alpha_local": [
+        0.2,
+        0.7
+      ],
+      "price_slope": [
+        0.04,
+        0.15
+      ],
+      "beta_0": [
+        -7.0,
+        -3.0
+      ],
+      "assortative_exponent": [
+        1.5,
+        4.5
+      ],
+      "intergenerational_skill_corr": [
+        0.3,
+        0.85
+      ]
+    },
+    "theta_warm": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta1": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta_hat": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "obj_stage1": 142.31253902015445,
+    "obj_stage2": 5573.365043583051,
+    "param_names": [
+      "beta_dissat",
+      "beta_renter",
+      "rho_aspiration",
+      "alpha_local",
+      "price_slope",
+      "beta_0",
+      "assortative_exponent",
+      "intergenerational_skill_corr"
+    ],
+    "binding_state": {
+      "beta_dissat": "interior",
+      "beta_renter": "low",
+      "rho_aspiration": "high",
+      "alpha_local": "low",
+      "price_slope": "interior",
+      "beta_0": "interior",
+      "assortative_exponent": "interior",
+      "intergenerational_skill_corr": "high"
+    },
+    "calibration_moment_names": [
+      "wealth_gini",
+      "top_1_wealth_share",
+      "top_10_wealth_share",
+      "bottom_50_wealth_share",
+      "homeownership_rate",
+      "aggregate_price_growth_15y",
+      "cross_regional_price_growth_sd",
+      "price_growth_supply_elasticity_correlation",
+      "aggregate_extreme_share_final",
+      "extreme_share_year_5",
+      "extreme_share_year_10",
+      "cross_regional_extreme_share_dispersion"
+    ],
+    "calibration_targets": [
+      0.81,
+      0.25,
+      0.6,
+      0.03,
+      0.5,
+      0.8,
+      0.5,
+      -0.7,
+      0.208,
+      0.1,
+      0.15,
+      0.08
+    ],
+    "calibration_values": [
+      0.7830946184568573,
+      0.25513084016214516,
+      0.6390250283738318,
+      0.02452921564997056,
+      0.48166666666666663,
+      0.6505784343691206,
+      0.45417652615127313,
+      -0.6964345451322704,
+      0.20929999999999999,
+      0.09515333333333334,
+      0.16174,
+      0.05059617978204223
+    ],
+    "calibration_errors": [
+      -0.026905381543142703,
+      0.005130840162145156,
+      0.039025028373831816,
+      -0.005470784350029439,
+      -0.018333333333333368,
+      -0.1494215656308795,
+      -0.04582347384872687,
+      0.003565454867729523,
+      0.0012999999999999956,
+      -0.004846666666666666,
+      0.01174,
+      -0.029403820217957774
+    ],
+    "calibration_within_tol": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "calibration_tolerances": [
+      0.03,
+      0.05,
+      0.05,
+      0.02,
+      0.03,
+      0.1,
+      0.1,
+      0.15,
+      0.01,
+      0.03,
+      0.03,
+      0.03
+    ],
+    "validation_renter_owner_gap": 0.27971068973317276,
+    "validation_price_growth_correlation": -0.6778168755663615,
+    "validation_bottom_quartile_wage_growth": 0.20956316155491597,
+    "budget": {
+      "n_first_stage": 40,
+      "n_second_stage": 20,
+      "n_variance_replications": 10,
+      "seeds": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    "elapsed_seconds": 541.1957592964172
+  },
+  {
+    "variant": "widen_intergenerational_skill_corr",
+    "description": "Intergenerational skill correlation high bound widened: 0.85 -> 0.99.",
+    "bounds": {
+      "beta_dissat": [
+        3.0,
+        9.0
+      ],
+      "beta_renter": [
+        0.2,
+        1.0
+      ],
+      "rho_aspiration": [
+        0.4,
+        0.9
+      ],
+      "alpha_local": [
+        0.2,
+        0.7
+      ],
+      "price_slope": [
+        0.04,
+        0.15
+      ],
+      "beta_0": [
+        -7.0,
+        -3.0
+      ],
+      "assortative_exponent": [
+        1.5,
+        3.0
+      ],
+      "intergenerational_skill_corr": [
+        0.3,
+        0.99
+      ]
+    },
+    "theta_warm": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta1": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta_hat": [
+      7.828128575978233,
+      0.2,
+      0.8733808506352632,
+      0.2,
+      0.04,
+      -5.357006249296589,
+      3.0,
+      0.8002589861701539
+    ],
+    "obj_stage1": 142.31253902015445,
+    "obj_stage2": 5063.088493270336,
+    "param_names": [
+      "beta_dissat",
+      "beta_renter",
+      "rho_aspiration",
+      "alpha_local",
+      "price_slope",
+      "beta_0",
+      "assortative_exponent",
+      "intergenerational_skill_corr"
+    ],
+    "binding_state": {
+      "beta_dissat": "interior",
+      "beta_renter": "low",
+      "rho_aspiration": "interior",
+      "alpha_local": "low",
+      "price_slope": "low",
+      "beta_0": "interior",
+      "assortative_exponent": "high",
+      "intergenerational_skill_corr": "interior"
+    },
+    "calibration_moment_names": [
+      "wealth_gini",
+      "top_1_wealth_share",
+      "top_10_wealth_share",
+      "bottom_50_wealth_share",
+      "homeownership_rate",
+      "aggregate_price_growth_15y",
+      "cross_regional_price_growth_sd",
+      "price_growth_supply_elasticity_correlation",
+      "aggregate_extreme_share_final",
+      "extreme_share_year_5",
+      "extreme_share_year_10",
+      "cross_regional_extreme_share_dispersion"
+    ],
+    "calibration_targets": [
+      0.81,
+      0.25,
+      0.6,
+      0.03,
+      0.5,
+      0.8,
+      0.5,
+      -0.7,
+      0.208,
+      0.1,
+      0.15,
+      0.08
+    ],
+    "calibration_values": [
+      0.7737093018435939,
+      0.2381958296795333,
+      0.6233932523803813,
+      0.026348879730898823,
+      0.48906,
+      0.47746675474868727,
+      0.3759674369747956,
+      -0.6279804298941645,
+      0.20889333333333332,
+      0.10675333333333334,
+      0.16845333333333334,
+      0.05239824072807462
+    ],
+    "calibration_errors": [
+      -0.036290698156406176,
+      -0.011804170320466711,
+      0.02339325238038137,
+      -0.003651120269101176,
+      -0.010940000000000005,
+      -0.3225332452513128,
+      -0.12403256302520438,
+      0.07201957010583548,
+      0.0008933333333333293,
+      0.006753333333333333,
+      0.01845333333333335,
+      -0.02760175927192538
+    ],
+    "calibration_within_tol": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "calibration_tolerances": [
+      0.03,
+      0.05,
+      0.05,
+      0.02,
+      0.03,
+      0.1,
+      0.1,
+      0.15,
+      0.01,
+      0.03,
+      0.03,
+      0.03
+    ],
+    "validation_renter_owner_gap": 0.2729540525375782,
+    "validation_price_growth_correlation": -0.6255334098486487,
+    "validation_bottom_quartile_wage_growth": 0.20328386212422642,
+    "budget": {
+      "n_first_stage": 40,
+      "n_second_stage": 20,
+      "n_variance_replications": 10,
+      "seeds": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    "elapsed_seconds": 539.9766249656677
+  },
+  {
+    "variant": "widen_ceiling_joint",
+    "description": "Three ceiling-bound parameters widened simultaneously.",
+    "bounds": {
+      "beta_dissat": [
+        3.0,
+        9.0
+      ],
+      "beta_renter": [
+        0.2,
+        1.0
+      ],
+      "rho_aspiration": [
+        0.4,
+        0.99
+      ],
+      "alpha_local": [
+        0.2,
+        0.7
+      ],
+      "price_slope": [
+        0.04,
+        0.15
+      ],
+      "beta_0": [
+        -7.0,
+        -3.0
+      ],
+      "assortative_exponent": [
+        1.5,
+        4.5
+      ],
+      "intergenerational_skill_corr": [
+        0.3,
+        0.99
+      ]
+    },
+    "theta_warm": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta1": [
+      8.252515052738755,
+      0.2,
+      0.9,
+      0.2,
+      0.05792025732263979,
+      -5.43499415749763,
+      3.0,
+      0.85
+    ],
+    "theta_hat": [
+      8.364900863793743,
+      0.2,
+      0.8845600512290525,
+      0.2,
+      0.04,
+      -5.795983433734815,
+      3.7288517063037676,
+      0.99
+    ],
+    "obj_stage1": 142.31253902015445,
+    "obj_stage2": 2920.6397373466198,
+    "param_names": [
+      "beta_dissat",
+      "beta_renter",
+      "rho_aspiration",
+      "alpha_local",
+      "price_slope",
+      "beta_0",
+      "assortative_exponent",
+      "intergenerational_skill_corr"
+    ],
+    "binding_state": {
+      "beta_dissat": "interior",
+      "beta_renter": "low",
+      "rho_aspiration": "interior",
+      "alpha_local": "low",
+      "price_slope": "low",
+      "beta_0": "interior",
+      "assortative_exponent": "interior",
+      "intergenerational_skill_corr": "high"
+    },
+    "calibration_moment_names": [
+      "wealth_gini",
+      "top_1_wealth_share",
+      "top_10_wealth_share",
+      "bottom_50_wealth_share",
+      "homeownership_rate",
+      "aggregate_price_growth_15y",
+      "cross_regional_price_growth_sd",
+      "price_growth_supply_elasticity_correlation",
+      "aggregate_extreme_share_final",
+      "extreme_share_year_5",
+      "extreme_share_year_10",
+      "cross_regional_extreme_share_dispersion"
+    ],
+    "calibration_targets": [
+      0.81,
+      0.25,
+      0.6,
+      0.03,
+      0.5,
+      0.8,
+      0.5,
+      -0.7,
+      0.208,
+      0.1,
+      0.15,
+      0.08
+    ],
+    "calibration_values": [
+      0.772633334712237,
+      0.24349146863373633,
+      0.622425409149933,
+      0.027170579788492216,
+      0.49256,
+      0.47709192245043974,
+      0.3735085555864012,
+      -0.628830304160366,
+      0.19272666666666666,
+      0.08925999999999999,
+      0.15056666666666665,
+      0.04971834222030204
+    ],
+    "calibration_errors": [
+      -0.037366665287763,
+      -0.00650853136626367,
+      0.022425409149933073,
+      -0.0028294202115077827,
+      -0.007440000000000002,
+      -0.3229080775495603,
+      -0.12649144441359877,
+      0.07116969583963395,
+      -0.015273333333333333,
+      -0.010740000000000013,
+      0.0005666666666666598,
+      -0.030281657779697962
+    ],
+    "calibration_within_tol": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "calibration_tolerances": [
+      0.03,
+      0.05,
+      0.05,
+      0.02,
+      0.03,
+      0.1,
+      0.1,
+      0.15,
+      0.01,
+      0.03,
+      0.03,
+      0.03
+    ],
+    "validation_renter_owner_gap": 0.25930132787889865,
+    "validation_price_growth_correlation": -0.6213484377055544,
+    "validation_bottom_quartile_wage_growth": 0.22729077196327915,
+    "budget": {
+      "n_first_stage": 40,
+      "n_second_stage": 20,
+      "n_variance_replications": 10,
+      "seeds": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    "elapsed_seconds": 554.7526230812073
+  }
+]

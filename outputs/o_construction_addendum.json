@@ -1,0 +1,242 @@
+{
+  "theta_hat": [
+    8.252515052738755,
+    0.2,
+    0.9,
+    0.2,
+    0.05792025732263979,
+    -5.43499415749763,
+    3.0,
+    0.85
+  ],
+  "n_seeds": 10,
+  "cells": [
+    {
+      "label": "4A: gain=0.25, cost=0.04, p50",
+      "realised_gain_share": 0.25,
+      "user_cost_rate": 0.04,
+      "aspiration_reference_quantile": 0.5,
+      "aggregate_afd": 0.11919666666666669,
+      "aggregate_afd_error": -0.0888033333333333,
+      "cleavage_de": 0.13976319572192944,
+      "cleavage_de_error": -0.010236804278070555,
+      "cleavage_uk": 0.11459625457820688,
+      "cleavage_uk_error": -0.035403745421793115,
+      "dispersion_de": 0.03243996432644732,
+      "moment_fit_count": 7,
+      "moment_fit_details": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.7823122154660549,
+          "error": -0.02768778453394516,
+          "tolerance": 0.03,
+          "within_tol": true
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.25180914620693795,
+          "error": 0.0018091462069379505,
+          "tolerance": 0.05,
+          "within_tol": true
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.6377551845473673,
+          "error": 0.03775518454736737,
+          "tolerance": 0.05,
+          "within_tol": true
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.0245581862284539,
+          "error": -0.005441813771546098,
+          "tolerance": 0.02,
+          "within_tol": true
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.4811799999999999,
+          "error": -0.018820000000000114,
+          "tolerance": 0.03,
+          "within_tol": true
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 0.6611729558992431,
+          "error": -0.13882704410075697,
+          "tolerance": 0.1,
+          "within_tol": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.44079542127665006,
+          "error": -0.05920457872334994,
+          "tolerance": 0.1,
+          "within_tol": true
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.6950455638197834,
+          "error": 0.004954436180216515,
+          "tolerance": 0.15,
+          "within_tol": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.11919666666666669,
+          "error": -0.0888033333333333,
+          "tolerance": 0.01,
+          "within_tol": false
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.05113000000000001,
+          "error": -0.04887,
+          "tolerance": 0.03,
+          "within_tol": false
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.08670666666666667,
+          "error": -0.06329333333333333,
+          "tolerance": 0.03,
+          "within_tol": false
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.03243996432644732,
+          "error": -0.04756003567355268,
+          "tolerance": 0.03,
+          "within_tol": false
+        }
+      ],
+      "elapsed_seconds": 26.075159788131714
+    },
+    {
+      "label": "4B: gain=0.5, cost=0.00, p50",
+      "realised_gain_share": 0.5,
+      "user_cost_rate": 0.0,
+      "aspiration_reference_quantile": 0.5,
+      "aggregate_afd": 0.10818000000000001,
+      "aggregate_afd_error": -0.09981999999999998,
+      "cleavage_de": 0.16280855662074223,
+      "cleavage_de_error": 0.012808556620742234,
+      "cleavage_uk": 0.13256605859550347,
+      "cleavage_uk_error": -0.017433941404496528,
+      "dispersion_de": 0.030532348234279312,
+      "moment_fit_count": 7,
+      "moment_fit_details": [
+        {
+          "name": "wealth_gini",
+          "target": 0.81,
+          "model": 0.7823122154660549,
+          "error": -0.02768778453394516,
+          "tolerance": 0.03,
+          "within_tol": true
+        },
+        {
+          "name": "top_1_wealth_share",
+          "target": 0.25,
+          "model": 0.25180914620693795,
+          "error": 0.0018091462069379505,
+          "tolerance": 0.05,
+          "within_tol": true
+        },
+        {
+          "name": "top_10_wealth_share",
+          "target": 0.6,
+          "model": 0.6377551845473673,
+          "error": 0.03775518454736737,
+          "tolerance": 0.05,
+          "within_tol": true
+        },
+        {
+          "name": "bottom_50_wealth_share",
+          "target": 0.03,
+          "model": 0.0245581862284539,
+          "error": -0.005441813771546098,
+          "tolerance": 0.02,
+          "within_tol": true
+        },
+        {
+          "name": "homeownership_rate",
+          "target": 0.5,
+          "model": 0.4811799999999999,
+          "error": -0.018820000000000114,
+          "tolerance": 0.03,
+          "within_tol": true
+        },
+        {
+          "name": "aggregate_price_growth_15y",
+          "target": 0.8,
+          "model": 0.6611729558992431,
+          "error": -0.13882704410075697,
+          "tolerance": 0.1,
+          "within_tol": false
+        },
+        {
+          "name": "cross_regional_price_growth_sd",
+          "target": 0.5,
+          "model": 0.44079542127665006,
+          "error": -0.05920457872334994,
+          "tolerance": 0.1,
+          "within_tol": true
+        },
+        {
+          "name": "price_growth_supply_elasticity_correlation",
+          "target": -0.7,
+          "model": -0.6950455638197834,
+          "error": 0.004954436180216515,
+          "tolerance": 0.15,
+          "within_tol": true
+        },
+        {
+          "name": "aggregate_extreme_share_final",
+          "target": 0.208,
+          "model": 0.10818000000000001,
+          "error": -0.09981999999999998,
+          "tolerance": 0.01,
+          "within_tol": false
+        },
+        {
+          "name": "extreme_share_year_5",
+          "target": 0.1,
+          "model": 0.04373666666666667,
+          "error": -0.05626333333333334,
+          "tolerance": 0.03,
+          "within_tol": false
+        },
+        {
+          "name": "extreme_share_year_10",
+          "target": 0.15,
+          "model": 0.07821999999999998,
+          "error": -0.07178000000000001,
+          "tolerance": 0.03,
+          "within_tol": false
+        },
+        {
+          "name": "cross_regional_extreme_share_dispersion",
+          "target": 0.08,
+          "model": 0.030532348234279312,
+          "error": -0.04946765176572069,
+          "tolerance": 0.03,
+          "within_tol": false
+        }
+      ],
+      "elapsed_seconds": 25.748823165893555
+    }
+  ],
+  "elapsed_seconds": 51.82445788383484
+}

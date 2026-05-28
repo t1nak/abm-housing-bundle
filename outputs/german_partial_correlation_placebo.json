@@ -1,0 +1,43 @@
+{
+  "n_seeds": 10,
+  "seeds": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82
+  ],
+  "theta": [
+    8.252515052738755,
+    0.2,
+    0.9,
+    0.2,
+    0.05792025732263979,
+    -5.43499415749763,
+    3.0,
+    0.85
+  ],
+  "param_names": [
+    "beta_dissat",
+    "beta_renter",
+    "rho_aspiration",
+    "alpha_local",
+    "price_slope",
+    "beta_0",
+    "assortative_exponent",
+    "intergenerational_skill_corr"
+  ],
+  "raw_correlation": -0.6606771835769578,
+  "raw_correlation_sign_negative": true,
+  "partial_correlation_income_controlled": 0.4508723157942387,
+  "partial_correlation_sign_negative": false,
+  "within_region_renter_owner_gap": 0.27820419672733465,
+  "spec": "Cross-regional regression of regional extreme-share vote (16 Laender) on regional cumulative price growth, controlling for regional mean income. Same functional form as validation/uk.py::_cross_regional_leave_price_partial_correlation.",
+  "interpretation": "Raw correlation matches the German held-out moment in moments.py. Partial correlation is the placebo for Adler-Ansell (2020). If the partial correlation is negative, the housing-channel mechanism produces the empirically correct conditional sign in Germany, isolating the UK sign mismatch as country-specific.",
+  "theta_source": "/Users/admin/Projects/abm-populism/outputs/smm_optimum.json"
+}

@@ -1,0 +1,28 @@
+{
+  "target": {
+    "wealth_gini": 0.81,
+    "homeownership_rate": 0.5,
+    "extreme_share_vote": 0.208
+  },
+  "abm": {
+    "wealth_gini": 0.7860033276021561,
+    "homeownership_rate": 0.4754,
+    "extreme_share_vote": 0.2104,
+    "cross_regional_dispersion": 0.050462021785368995,
+    "within_region_renter_owner_gap": 0.2850253494132133,
+    "incomplete_material_repair_effect": -0.113
+  },
+  "hank": {
+    "wealth_gini": 0.8100295433815602,
+    "homeownership_rate": 0.5,
+    "extreme_share_vote": 0.20800002247153218,
+    "cross_regional_dispersion": 0.0,
+    "within_region_renter_owner_gap": 0.0,
+    "incomplete_material_repair_effect": 5.551115123125783e-17
+  },
+  "hank_paired_scenarios": {
+    "housing_only_vote": 0.1694529636793762,
+    "multichannel_vote": 0.15399773066036895,
+    "vote_diff": -0.015455233019007253
+  }
+}

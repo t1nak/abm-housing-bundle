@@ -1,0 +1,7 @@
+moment,target,ABM,HANK
+Aggregate wealth Gini,0.81,0.786,0.810
+Homeownership rate,0.50,0.475,0.500
+Aggregate extreme-share vote,0.208,0.210,0.208
+Cross-regional extreme-share dispersion,nonzero,0.050,0.000
+Within-region renter-owner vote gap,">= +0,15",+0.285,+0.000
+Incomplete-material-repair effect (P3),structural,-0.113,+0.000
