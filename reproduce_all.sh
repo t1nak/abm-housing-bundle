@@ -6,10 +6,10 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-echo "== 1/11 calibration diagnostics (Table 5, section 6 numbers) =="
+echo "== 1/11 calibration diagnostics (Table 3, section 6 numbers) =="
 uv run python scripts/baseline_diagnostics.py
 
-echo "== 2/11 mechanism distinctness (Table 4) =="
+echo "== 2/11 mechanism distinctness (Table 1) =="
 uv run python scripts/mechanism_diagnostics.py
 
 echo "== 3/11 policy decomposition + dose (Tables 6-7) =="

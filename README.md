@@ -41,10 +41,10 @@ in `src/abmhp/margin_calibration.py`; outputs written to `outputs/`):
 
 | Paper object | Script |
 |---|---|
-| Table 5 (calibration diagnostics), §6 numbers, housing-channel ceiling | `scripts/baseline_diagnostics.py` |
-| Table 4 (mechanism distinctness) | `scripts/mechanism_diagnostics.py` |
+| Table 3 (calibration diagnostics), §6 numbers, housing-channel ceiling | `scripts/baseline_diagnostics.py` |
+| Table 1 (mechanism distinctness) | `scripts/mechanism_diagnostics.py` |
 | Table 6 (policy decomposition), Table 7 (dose), `fig-decomp.png` | `scripts/decomposition_headline.py`, `scripts/make_fig_decomp.py` |
-| §5 untargeted moments, OA.4 variant table | `scripts/validation_moments.py` |
+| Table 4 (§5 untargeted moments), OA.4 variant table | `scripts/validation_moments.py` |
 | Table 8 (three gap scenarios) | `scripts/adjusted_anchor_band.py` |
 | OA.3 coefficient anchor-matching grid | `scripts/gamma_manifold.py` |
 | OA.3 aspiration-locality table, `fig-alpha-loc.png` | `scripts/alpha_loc_robustness.py`, `scripts/make_fig_alpha_loc.py` |
