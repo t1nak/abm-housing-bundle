@@ -1,6 +1,6 @@
-# Priced Out and Locked Out — Replication Package
+# A Calibrated Heterogeneous-Agent Model of Housing Pressure and Anti-Establishment Voting — Replication Package
 
-Public replication archive for **"Priced Out and Locked Out: A Calibrated
+Public replication archive for **"A Calibrated
 Heterogeneous-Agent Model of Housing Pressure and Anti-Establishment
 Voting"** (Koziol 2026).
 
@@ -81,7 +81,7 @@ uv run python scripts/soep_anchor_pipeline.py --selftest
 
 ## Citation
 
-Koziol, T. (2026). *Priced Out and Locked Out: A Calibrated
+Koziol, T. (2026). *A Calibrated
 Heterogeneous-Agent Model of Housing Pressure and Anti-Establishment Voting.*
 Working paper. (Update with journal reference / DOI on publication.)
 
