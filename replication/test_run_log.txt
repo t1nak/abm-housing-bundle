@@ -1,0 +1,22 @@
+# Clean test-suite run log
+# Command: uv run pytest -v
+# Date (UTC): 2026-07-23
+# Environment: uv-managed (see pyproject.toml / uv.lock)
+
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.3, pluggy-1.6.0
+rootdir: /home/user/abm-paper-housing-voting
+configfile: pyproject.toml
+testpaths: tests
+plugins: xdist-3.8.0
+collected 67 items
+
+tests/test_baseline.py .......x                                          [ 11%]
+tests/test_estimation.py .........x.xx...........                        [ 47%]
+tests/test_hank_benchmark.py ........                                    [ 59%]
+tests/test_metrics.py .........                                          [ 73%]
+tests/test_policy.py ........                                            [ 85%]
+tests/test_reference_rule.py .....                                       [ 92%]
+tests/test_uk_validation.py .....                                        [100%]
+
+================== 63 passed, 4 xfailed in 127.49s (0:02:07) ===================

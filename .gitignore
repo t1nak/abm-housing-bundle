@@ -1,26 +1,8 @@
 # Python
 __pycache__/
-*.py[cod]
-*.egg-info/
-.eggs/
-build/
-dist/
-
-# Virtual environments
+*.pyc
 .venv/
-venv/
-.env
-
-# uv
-.uv/
-
-# OS / editor
-.DS_Store
-*.swp
-.idea/
-.vscode/
-
-# Test / coverage caches
 .pytest_cache/
-.coverage
-htmlcov/
+# large / regenerable
+outputs/*.npz
+outputs/run_trial*.log

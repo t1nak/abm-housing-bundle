@@ -1,0 +1,81 @@
+{
+  "param_names": [
+    "gamma_rent",
+    "gamma_asset",
+    "gamma_access",
+    "rho_aspiration",
+    "beta_0"
+  ],
+  "theta_hat": [
+    1.328900395697239,
+    0.9386188126649254,
+    1.297710896917789,
+    0.7465928842084006,
+    -2.572397217880579
+  ],
+  "se": [
+    3.450113633083376,
+    6.92961560865512,
+    7.984917852041659,
+    2.546536432394468,
+    7.597948723054168
+  ],
+  "j_statistic": 2503.4240578425047,
+  "p_value": 0.0,
+  "moment_names": [
+    "wealth_gini",
+    "top_1_wealth_share",
+    "top_10_wealth_share",
+    "bottom_50_wealth_share",
+    "homeownership_rate",
+    "aggregate_price_growth_15y",
+    "cross_regional_price_growth_sd",
+    "price_growth_supply_elasticity_correlation",
+    "aggregate_extreme_share_final",
+    "cross_regional_extreme_share_dispersion",
+    "renter_owner_vote_gap",
+    "price_growth_renter_vote_corr",
+    "rent_burden_vote_corr",
+    "access_gap_vote_corr"
+  ],
+  "moment_targets": [
+    0.81,
+    0.25,
+    0.6,
+    0.03,
+    0.5,
+    0.8,
+    0.5,
+    -0.7,
+    0.208,
+    0.08,
+    0.15,
+    0.15,
+    0.15,
+    0.15
+  ],
+  "moment_at_optimum": [
+    0.7875329890886592,
+    0.23252881538373482,
+    0.6470401216029062,
+    0.022450994207863242,
+    0.4725533333333334,
+    0.783184969852052,
+    0.4811457380846577,
+    -0.7545661243813264,
+    0.26159333333333334,
+    0.021888213650918826,
+    0.28227919654690625,
+    0.15,
+    0.15,
+    0.15
+  ],
+  "heldout": {
+    "agg": 0.2612888888888889,
+    "gap": 0.28267613361458127,
+    "disp": 0.020844727633926443,
+    "pg": 0.7947930138234599,
+    "rent": 0.7161617610874517,
+    "access": 0.30923294142802926
+  }
+}

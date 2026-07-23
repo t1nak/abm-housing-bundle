@@ -1,0 +1,69 @@
+{
+  "corr_all_mean": [
+    [
+      1.0,
+      0.59,
+      0.829
+    ],
+    [
+      0.59,
+      1.0,
+      0.689
+    ],
+    [
+      0.829,
+      0.689,
+      1.0
+    ]
+  ],
+  "corr_renters_mean": [
+    [
+      1.0,
+      -0.113,
+      0.507
+    ],
+    [
+      -0.113,
+      1.0,
+      -0.09
+    ],
+    [
+      0.507,
+      -0.09,
+      1.0
+    ]
+  ],
+  "mean_by_tenure": {
+    "renter": {
+      "d_rent": 0.444,
+      "d_asset": 0.318,
+      "d_access": 0.731
+    },
+    "owner": {
+      "d_rent": 0.0,
+      "d_asset": 0.0,
+      "d_access": 0.0
+    }
+  },
+  "share_positive": {
+    "renter_d_rent": 0.921,
+    "owner_d_rent": 0.0
+  },
+  "mean_by_type": {
+    "super": {
+      "d_rent": 0.228,
+      "d_asset": 0.257,
+      "d_access": 0.383
+    },
+    "avg": {
+      "d_rent": 0.213,
+      "d_asset": 0.122,
+      "d_access": 0.356
+    },
+    "decl": {
+      "d_rent": 0.223,
+      "d_asset": 0.045,
+      "d_access": 0.345
+    }
+  }
+}

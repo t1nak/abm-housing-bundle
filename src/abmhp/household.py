@@ -41,8 +41,12 @@ def initialise(cfg: Config, rng: np.random.Generator) -> HouseholdState:
     wealth = rng.lognormal(np.log(median), demo.init_wealth_sigma)
     wealth = np.clip(wealth, 200.0, 5e7)
 
+    # Initial tenure: wealth above the national median, scaled by the
+    # region's rental-market depth (deep metropolitan rental markets set
+    # a higher effective bar for owner-occupancy; depth = 1 recovers the
+    # uniform national-median rule).
     ownership_threshold = float(np.percentile(wealth, 50))
-    homeowner = wealth > ownership_threshold
+    homeowner = wealth > ownership_threshold * regional.rental_market_depth[region]
 
     aspiration = income.copy()
     extreme_voter = np.zeros(n, dtype=bool)

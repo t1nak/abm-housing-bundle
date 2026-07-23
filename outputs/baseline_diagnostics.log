@@ -1,0 +1,77 @@
+{
+  "vote": {
+    "mean": 0.2091,
+    "sd": 0.0016
+  },
+  "gap": {
+    "mean": 0.1022,
+    "sd": 0.0028
+  },
+  "gini": {
+    "mean": 0.7779,
+    "sd": 0.0026
+  },
+  "top1": {
+    "mean": 0.2377,
+    "sd": 0.0067
+  },
+  "top10": {
+    "mean": 0.6366,
+    "sd": 0.0043
+  },
+  "bot50": {
+    "mean": 0.0267,
+    "sd": 0.0007
+  },
+  "own": {
+    "mean": 0.5017,
+    "sd": 0.0046
+  },
+  "pgrowth": {
+    "mean": 0.7518,
+    "sd": 0.0496
+  },
+  "pgrowth_sd": {
+    "mean": 0.4536,
+    "sd": 0.035
+  },
+  "elast_corr": {
+    "mean": -0.7652,
+    "sd": 0.0913
+  },
+  "gap_super": {
+    "mean": 0.1163,
+    "sd": 0.0115
+  },
+  "gap_avg": {
+    "mean": 0.1012,
+    "sd": 0.0209
+  },
+  "gap_decl": {
+    "mean": 0.09,
+    "sd": 0.0219
+  },
+  "below_half": {
+    "mean": 0.8201,
+    "sd": 0.0039
+  },
+  "within20": {
+    "mean": 0.0343,
+    "sd": 0.0009
+  },
+  "vote_gamma0": {
+    "mean": 0.1507,
+    "sd": 0.0016
+  },
+  "gradients": {
+    "pg_renter": 0.646,
+    "rent_burden": 0.725,
+    "access": 0.269
+  },
+  "ceiling": {
+    "baseline_vote": 0.2091,
+    "gamma0_vote": 0.1507,
+    "housing_contribution": 0.0584,
+    "housing_share": 0.279
+  }
+}

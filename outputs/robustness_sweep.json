@@ -1,0 +1,1272 @@
+{
+  "T": 25,
+  "seeds": [
+    73,
+    74,
+    75,
+    76,
+    77
+  ],
+  "variants": {
+    "baseline": {
+      "baseline_vote": 0.2361733333333333,
+      "baseline_gap": 0.13293541787484894,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03350786577802223,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.0023599999999999455
+        },
+        "supply": {
+          "d_rent": -0.013924546393867698,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.004433333333333289
+        },
+        "access": {
+          "d_rent": -0.004256927475550232,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -0.0006533333333332836
+        },
+        "transfer": {
+          "d_rent": -0.015063952934140423,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.015766666666666596
+        },
+        "bundle": {
+          "d_rent": -0.07228431060095711,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.02641999999999997
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "downpay_0.25": {
+      "baseline_vote": 0.2348333333333333,
+      "baseline_gap": 0.13309559514564298,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.033547239176027976,
+          "d_asset": -0.0015862462363400165,
+          "d_access": -0.005456831409895668,
+          "vote": -0.0026733333333333054
+        },
+        "supply": {
+          "d_rent": -0.013819784705229876,
+          "d_asset": -0.027080108321270918,
+          "d_access": -0.016446928700470598,
+          "vote": -0.0048266666666666735
+        },
+        "access": {
+          "d_rent": -0.005436553170298564,
+          "d_asset": -0.003904902209268757,
+          "d_access": -0.006206324113842698,
+          "vote": -0.00076666666666661
+        },
+        "transfer": {
+          "d_rent": -0.026579107035091254,
+          "d_asset": -0.01827985050598782,
+          "d_access": -0.178984760209201,
+          "vote": -0.020759999999999973
+        },
+        "bundle": {
+          "d_rent": -0.0743519751665479,
+          "d_asset": -0.049232131105444554,
+          "d_access": -0.19622011322208593,
+          "vote": -0.027613333333333295
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "downpay_0.35": {
+      "baseline_vote": 0.23759333333333332,
+      "baseline_gap": 0.13711644834677697,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.036092161115187094,
+          "d_asset": -0.0018778270891975646,
+          "d_access": -0.006525145425223311,
+          "vote": -0.00273333333333331
+        },
+        "supply": {
+          "d_rent": -0.014649462239079702,
+          "d_asset": -0.024239388687061103,
+          "d_access": -0.02073719951868558,
+          "vote": -0.0035666666666666624
+        },
+        "access": {
+          "d_rent": -0.008189214876082762,
+          "d_asset": -0.009667252562568202,
+          "d_access": -0.010729705569190118,
+          "vote": -0.0020466666666666133
+        },
+        "transfer": {
+          "d_rent": -0.019224626330474726,
+          "d_asset": -0.01862648765269484,
+          "d_access": -0.1412416674242511,
+          "vote": -0.016273333333333306
+        },
+        "bundle": {
+          "d_rent": -0.07065296897742546,
+          "d_asset": -0.039453859348766995,
+          "d_access": -0.16676616271400768,
+          "vote": -0.023046666666666604
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "buyprob_0.25": {
+      "baseline_vote": 0.23724000000000003,
+      "baseline_gap": 0.13212545498486813,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03149041650021017,
+          "d_asset": -0.0057104517886762685,
+          "d_access": -0.0009127211310983596,
+          "vote": -0.002133333333333376
+        },
+        "supply": {
+          "d_rent": -0.015321473712787359,
+          "d_asset": -0.028247336882596397,
+          "d_access": -0.022329391146476862,
+          "vote": -0.005086666666666684
+        },
+        "access": {
+          "d_rent": -0.006668632656211537,
+          "d_asset": -0.009218113115432969,
+          "d_access": -0.01314691641136162,
+          "vote": -0.001480000000000009
+        },
+        "transfer": {
+          "d_rent": -0.01915945162551924,
+          "d_asset": -0.01974229733947,
+          "d_access": -0.15623160429501293,
+          "vote": -0.018946666666666667
+        },
+        "bundle": {
+          "d_rent": -0.07088040482337188,
+          "d_asset": -0.04898766511378816,
+          "d_access": -0.1817462706337411,
+          "vote": -0.026926666666666682
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "buyprob_0.45": {
+      "baseline_vote": 0.2346,
+      "baseline_gap": 0.1374085339610546,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.02687874431326337,
+          "d_asset": 0.001242936096342434,
+          "d_access": 0.004560340256510309,
+          "vote": -0.001386666666666675
+        },
+        "supply": {
+          "d_rent": -0.008122361270212874,
+          "d_asset": -0.01684149818369801,
+          "d_access": -0.010327843925883762,
+          "vote": -0.003906666666666669
+        },
+        "access": {
+          "d_rent": -0.0004329056713816559,
+          "d_asset": -0.005593673570039787,
+          "d_access": -0.001295332157029927,
+          "vote": -0.001166666666666677
+        },
+        "transfer": {
+          "d_rent": -0.01739638328397708,
+          "d_asset": -0.012784777653953888,
+          "d_access": -0.1547475916280826,
+          "vote": -0.017400000000000027
+        },
+        "bundle": {
+          "d_rent": -0.07376962051309272,
+          "d_asset": -0.04252989832852336,
+          "d_access": -0.18304238282782798,
+          "vote": -0.02650666666666668
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "rho_asp_0.85": {
+      "baseline_vote": 0.23764000000000002,
+      "baseline_gap": 0.1353545842030258,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.029812808542953484,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.0021000000000000185
+        },
+        "supply": {
+          "d_rent": -0.01332260732694257,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.0045600000000000085
+        },
+        "access": {
+          "d_rent": -0.005013252512739874,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -0.0006933333333333236
+        },
+        "transfer": {
+          "d_rent": -0.017311372632285105,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.01597333333333334
+        },
+        "bundle": {
+          "d_rent": -0.07286297886282639,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.026433333333333392
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "rho_asp_0.96": {
+      "baseline_vote": 0.23402666666666666,
+      "baseline_gap": 0.12929336591477622,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03930154404135089,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.002840000000000009
+        },
+        "supply": {
+          "d_rent": -0.014813464484438155,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.0045199999999999685
+        },
+        "access": {
+          "d_rent": -0.002847406577800693,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -0.0005999999999999894
+        },
+        "transfer": {
+          "d_rent": -0.011351115090325103,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.015539999999999998
+        },
+        "bundle": {
+          "d_rent": -0.07107224756959396,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.02636666666666665
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "returns_x0.75": {
+      "baseline_vote": 0.23575333333333334,
+      "baseline_gap": 0.13374734192731424,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.0324608726635347,
+          "d_asset": 0.0025596947572941453,
+          "d_access": -0.0014172717041944782,
+          "vote": -0.0021066666666666456
+        },
+        "supply": {
+          "d_rent": -0.01192942820732057,
+          "d_asset": -0.024825029692307904,
+          "d_access": -0.015088584530620397,
+          "vote": -0.005799999999999972
+        },
+        "access": {
+          "d_rent": -0.0038880533979723797,
+          "d_asset": 0.002326715312753108,
+          "d_access": -0.004213048769627692,
+          "vote": 0.00015999999999999348
+        },
+        "transfer": {
+          "d_rent": -0.016187764715135056,
+          "d_asset": -0.011374216334521486,
+          "d_access": -0.15248002245673176,
+          "vote": -0.016546666666666654
+        },
+        "bundle": {
+          "d_rent": -0.0718927901243605,
+          "d_asset": -0.04364989086467563,
+          "d_access": -0.18007132771672868,
+          "vote": -0.02697333333333332
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "returns_x1.25": {
+      "baseline_vote": 0.23890666666666666,
+      "baseline_gap": 0.13795875104319846,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03662183516662343,
+          "d_asset": -0.00558889741935234,
+          "d_access": -0.0064707139827285265,
+          "vote": -0.0046399999999999775
+        },
+        "supply": {
+          "d_rent": -0.021428936798380427,
+          "d_asset": -0.030857295798306678,
+          "d_access": -0.0267618227264112,
+          "vote": -0.007493333333333324
+        },
+        "access": {
+          "d_rent": -0.005751189186575245,
+          "d_asset": -0.014198218016541753,
+          "d_access": -0.008384105429961708,
+          "vote": -0.003119999999999984
+        },
+        "transfer": {
+          "d_rent": -0.017122854217129835,
+          "d_asset": -0.020668161041766386,
+          "d_access": -0.15248635817440398,
+          "vote": -0.018973333333333287
+        },
+        "bundle": {
+          "d_rent": -0.07532122593128515,
+          "d_asset": -0.05835894041384454,
+          "d_access": -0.18791473650678558,
+          "vote": -0.029126666666666634
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "housing_exp_x0.8": {
+      "baseline_vote": 0.23465333333333332,
+      "baseline_gap": 0.13258952764390072,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.029477140945457003,
+          "d_asset": -0.0016200090535158085,
+          "d_access": 0.0029164885793068196,
+          "vote": -0.002246666666666619
+        },
+        "supply": {
+          "d_rent": -0.011490259107669099,
+          "d_asset": -0.02303587395173104,
+          "d_access": -0.01414189795817411,
+          "vote": -0.005753333333333305
+        },
+        "access": {
+          "d_rent": -0.0044661520502484175,
+          "d_asset": -0.001761487152914104,
+          "d_access": -0.0046042681135438634,
+          "vote": 0.0004666666666666708
+        },
+        "transfer": {
+          "d_rent": -0.016767971368436774,
+          "d_asset": -0.00888076312100955,
+          "d_access": -0.11684401647206077,
+          "vote": -0.012166666666666659
+        },
+        "bundle": {
+          "d_rent": -0.06788824204429594,
+          "d_asset": -0.046149327404208795,
+          "d_access": -0.14748220846246568,
+          "vote": -0.023913333333333314
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "housing_exp_x1.2": {
+      "baseline_vote": 0.2378,
+      "baseline_gap": 0.13669337088320585,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.037144333585304834,
+          "d_asset": -0.0030083424924794433,
+          "d_access": -0.0070462398158304684,
+          "vote": -0.001679999999999987
+        },
+        "supply": {
+          "d_rent": -0.018882591724968034,
+          "d_asset": -0.02634180077702944,
+          "d_access": -0.025831950934315173,
+          "vote": -0.006226666666666686
+        },
+        "access": {
+          "d_rent": -0.006256524673542985,
+          "d_asset": -0.011582299504006244,
+          "d_access": -0.00833256846376862,
+          "vote": -0.0017866666666666864
+        },
+        "transfer": {
+          "d_rent": -0.024209917821790328,
+          "d_asset": -0.02235845127259642,
+          "d_access": -0.19629533266533206,
+          "vote": -0.022800000000000015
+        },
+        "bundle": {
+          "d_rent": -0.07530772403426444,
+          "d_asset": -0.05187705032507314,
+          "d_access": -0.21724560711484753,
+          "vote": -0.030786666666666684
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": false,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": false
+    },
+    "assort_1.6": {
+      "baseline_vote": 0.23697333333333334,
+      "baseline_gap": 0.1369342277578965,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03022822177172807,
+          "d_asset": 0.004173428098557752,
+          "d_access": 0.002113216619427205,
+          "vote": -0.0014400000000000246
+        },
+        "supply": {
+          "d_rent": -0.015127037819932077,
+          "d_asset": -0.021766785841748876,
+          "d_access": -0.020474393914490574,
+          "vote": -0.005160000000000053
+        },
+        "access": {
+          "d_rent": -0.0014139626583688503,
+          "d_asset": -0.007469115236038659,
+          "d_access": -0.00312870548286881,
+          "vote": -0.0010200000000000209
+        },
+        "transfer": {
+          "d_rent": -0.019161351775364932,
+          "d_asset": -0.01375081792848154,
+          "d_access": -0.15919118551110467,
+          "vote": -0.01818
+        },
+        "bundle": {
+          "d_rent": -0.06866185815523651,
+          "d_asset": -0.04071837831112676,
+          "d_access": -0.1798757378159258,
+          "vote": -0.026013333333333305
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "assort_2.6": {
+      "baseline_vote": 0.23621999999999996,
+      "baseline_gap": 0.13457403094446033,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.032520320471472186,
+          "d_asset": -0.003464259495822297,
+          "d_access": -0.00040379646017013604,
+          "vote": -0.0024733333333333274
+        },
+        "supply": {
+          "d_rent": -0.01617164659868653,
+          "d_asset": -0.028271590036828775,
+          "d_access": -0.02259763795537978,
+          "vote": -0.007106666666666622
+        },
+        "access": {
+          "d_rent": -0.006449349930515713,
+          "d_asset": -0.011291557714275424,
+          "d_access": -0.00823650652840019,
+          "vote": -0.0019999999999999463
+        },
+        "transfer": {
+          "d_rent": -0.01753597736194179,
+          "d_asset": -0.01028123769866865,
+          "d_access": -0.1533515513225508,
+          "vote": -0.016639999999999933
+        },
+        "bundle": {
+          "d_rent": -0.07365483564349157,
+          "d_asset": -0.048818594633490614,
+          "d_access": -0.18505907730339038,
+          "vote": -0.027113333333333267
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "beqtax_0.15": {
+      "baseline_vote": 0.23786000000000002,
+      "baseline_gap": 0.13916008659079854,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03543601800199925,
+          "d_asset": -0.0029041913003128306,
+          "d_access": -0.006638480402126945,
+          "vote": -0.003720000000000001
+        },
+        "supply": {
+          "d_rent": -0.01310659305066908,
+          "d_asset": -0.023437132775384256,
+          "d_access": -0.016442098304254138,
+          "vote": -0.005386666666666651
+        },
+        "access": {
+          "d_rent": -0.007221630939129753,
+          "d_asset": -0.00768416711215808,
+          "d_access": -0.009740835742340359,
+          "vote": -0.00356666666666669
+        },
+        "transfer": {
+          "d_rent": -0.018246864170573918,
+          "d_asset": -0.009506020899843232,
+          "d_access": -0.16176580197947843,
+          "vote": -0.017939999999999984
+        },
+        "bundle": {
+          "d_rent": -0.06740307917395039,
+          "d_asset": -0.04422565538522316,
+          "d_access": -0.18065089238146947,
+          "vote": -0.02642666666666671
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "beqtax_0.30": {
+      "baseline_vote": 0.23669333333333334,
+      "baseline_gap": 0.1385991441923395,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03172569520701146,
+          "d_asset": 0.001565542205225423,
+          "d_access": -0.004270325563155708,
+          "vote": -0.002066666666666661
+        },
+        "supply": {
+          "d_rent": -0.015772048786586668,
+          "d_asset": -0.02116264385715247,
+          "d_access": -0.022274599655409566,
+          "vote": -0.006493333333333323
+        },
+        "access": {
+          "d_rent": -0.00589044643356984,
+          "d_asset": -0.007802322623467861,
+          "d_access": -0.009838247404320544,
+          "vote": -0.00360000000000002
+        },
+        "transfer": {
+          "d_rent": -0.021195166655433806,
+          "d_asset": -0.010841994420602546,
+          "d_access": -0.15860915621064942,
+          "vote": -0.01838666666666669
+        },
+        "bundle": {
+          "d_rent": -0.07090509757768507,
+          "d_asset": -0.04414043570053816,
+          "d_access": -0.17901754811638115,
+          "vote": -0.027619999999999978
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": false,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": false
+    },
+    "leak_x0.5": {
+      "baseline_vote": 0.2361733333333333,
+      "baseline_gap": 0.13293541787484894,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.04141621030440851,
+          "d_asset": -0.0019202611400101488,
+          "d_access": -0.005217866362715096,
+          "vote": -0.0029533333333332523
+        },
+        "supply": {
+          "d_rent": -0.01569749527814268,
+          "d_asset": -0.03250735644204461,
+          "d_access": -0.021114983319328096,
+          "vote": -0.006213333333333293
+        },
+        "access": {
+          "d_rent": -0.010900812370213397,
+          "d_asset": -0.007283122810047338,
+          "d_access": -0.013250811863533218,
+          "vote": -0.001493333333333291
+        },
+        "transfer": {
+          "d_rent": -0.015063952934140423,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.015766666666666596
+        },
+        "bundle": {
+          "d_rent": -0.0841383871342413,
+          "d_asset": -0.06063414643201859,
+          "d_access": -0.18872860347923398,
+          "vote": -0.02939333333333327
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "leak_x1.5": {
+      "baseline_vote": 0.2361733333333333,
+      "baseline_gap": 0.13293541787484894,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.022331885064584334,
+          "d_asset": 0.00044611182604137323,
+          "d_access": -0.00011784124861941025,
+          "vote": -0.0007533333333332726
+        },
+        "supply": {
+          "d_rent": -0.010749972855570666,
+          "d_asset": -0.02376357998888254,
+          "d_access": -0.012815646467584596,
+          "vote": -0.0053533333333332656
+        },
+        "access": {
+          "d_rent": -0.003056242990072844,
+          "d_asset": -0.0017800142038478795,
+          "d_access": -0.0047585640701048315,
+          "vote": -0.00017999999999995797
+        },
+        "transfer": {
+          "d_rent": -0.015063952934140423,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.015766666666666596
+        },
+        "bundle": {
+          "d_rent": -0.054602788359883636,
+          "d_asset": -0.03026846320622431,
+          "d_access": -0.1738189109205135,
+          "vote": -0.022313333333333296
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "gamma_x0.75": {
+      "baseline_vote": 0.21117999999999998,
+      "baseline_gap": 0.0927510544972022,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03350786577802223,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.0015266666666666484
+        },
+        "supply": {
+          "d_rent": -0.013924546393867698,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.002920000000000006
+        },
+        "access": {
+          "d_rent": -0.004256927475550232,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -0.0003933333333333011
+        },
+        "transfer": {
+          "d_rent": -0.015063952934140423,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.011006666666666665
+        },
+        "bundle": {
+          "d_rent": -0.07228431060095711,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.018439999999999984
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "gamma_x1.25": {
+      "baseline_vote": 0.2641133333333333,
+      "baseline_gap": 0.17819261125089111,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03350786577802223,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.002919999999999978
+        },
+        "supply": {
+          "d_rent": -0.013924546393867698,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.006466666666666621
+        },
+        "access": {
+          "d_rent": -0.004256927475550232,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -0.0006733333333333036
+        },
+        "transfer": {
+          "d_rent": -0.015063952934140423,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.021706666666666652
+        },
+        "bundle": {
+          "d_rent": -0.07228431060095711,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.035959999999999964
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "split_asset_heavy": {
+      "baseline_vote": 0.22585333333333332,
+      "baseline_gap": 0.11540409009981514,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03350786577802223,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.0024266666666666603
+        },
+        "supply": {
+          "d_rent": -0.013924546393867698,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.0049066666666666425
+        },
+        "access": {
+          "d_rent": -0.004256927475550232,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -0.00082666666666667
+        },
+        "transfer": {
+          "d_rent": -0.015063952934140423,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.010440000000000005
+        },
+        "bundle": {
+          "d_rent": -0.07228431060095711,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.020893333333333347
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "split_access_heavy": {
+      "baseline_vote": 0.2448666666666667,
+      "baseline_gap": 0.14816956204157405,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03350786577802223,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.00303333333333336
+        },
+        "supply": {
+          "d_rent": -0.013924546393867698,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.0043133333333333634
+        },
+        "access": {
+          "d_rent": -0.004256927475550232,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -0.0009200000000000319
+        },
+        "transfer": {
+          "d_rent": -0.015063952934140423,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.021926666666666705
+        },
+        "bundle": {
+          "d_rent": -0.07228431060095711,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.03203333333333336
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "rent_ungated": {
+      "baseline_vote": 0.23951333333333333,
+      "baseline_gap": 0.1260282022790848,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03345506174183199,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.0024933333333333196
+        },
+        "supply": {
+          "d_rent": -0.011777740634771605,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.004713333333333347
+        },
+        "access": {
+          "d_rent": 0.0003220669005423171,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -0.0006733333333333313
+        },
+        "transfer": {
+          "d_rent": -0.0015925894676935837,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.015359999999999985
+        },
+        "bundle": {
+          "d_rent": -0.04227930470844321,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.025306666666666672
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "user_cost_0.04": {
+      "baseline_vote": 0.2361733333333333,
+      "baseline_gap": 0.13293541787484894,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03350786577802223,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.0023599999999999455
+        },
+        "supply": {
+          "d_rent": -0.013924546393867698,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.004433333333333289
+        },
+        "access": {
+          "d_rent": -0.004256927475550232,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -0.0006533333333332836
+        },
+        "transfer": {
+          "d_rent": -0.015063952934140423,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.015766666666666596
+        },
+        "bundle": {
+          "d_rent": -0.07228431060095711,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.02641999999999997
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "leverage_decr": {
+      "baseline_vote": 0.23224666666666666,
+      "baseline_gap": 0.13378590573683286,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.02958427502016181,
+          "d_asset": -0.001665671118753126,
+          "d_access": -0.001130311714548915,
+          "vote": -0.0014466666666666794
+        },
+        "supply": {
+          "d_rent": -0.009573583579016165,
+          "d_asset": -0.023386758909922145,
+          "d_access": -0.015166472018289023,
+          "vote": -0.005879999999999969
+        },
+        "access": {
+          "d_rent": -0.00501223644822818,
+          "d_asset": -0.007785727207624327,
+          "d_access": -0.005202131269948895,
+          "vote": -0.0012199999999999989
+        },
+        "transfer": {
+          "d_rent": -0.024630242828049376,
+          "d_asset": -0.015729293504404024,
+          "d_access": -0.12360808141495166,
+          "vote": -0.013979999999999992
+        },
+        "bundle": {
+          "d_rent": -0.07178845689648855,
+          "d_asset": -0.04512649272795782,
+          "d_access": -0.15146154467606726,
+          "vote": -0.02259999999999998
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "no_parental_help": {
+      "baseline_vote": 0.24355333333333334,
+      "baseline_gap": 0.1310507868650909,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03659736401705488,
+          "d_asset": 0.0002782436260805321,
+          "d_access": -0.005748184624279062,
+          "vote": -0.0028799999999999937
+        },
+        "supply": {
+          "d_rent": -0.01456618328718351,
+          "d_asset": -0.026592049422223624,
+          "d_access": -0.019884977679615612,
+          "vote": -0.00580666666666671
+        },
+        "access": {
+          "d_rent": -0.004561813450582375,
+          "d_asset": -0.006278421652493316,
+          "d_access": -0.003660436120527022,
+          "vote": -0.0011466666666666847
+        },
+        "transfer": {
+          "d_rent": -0.008053683147481783,
+          "d_asset": -0.0059480025963416505,
+          "d_access": -0.15533236947346607,
+          "vote": -0.01719333333333331
+        },
+        "bundle": {
+          "d_rent": -0.06227794685712662,
+          "d_asset": -0.04153727174912117,
+          "d_access": -0.18133620628449226,
+          "vote": -0.02650666666666668
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "uniform_depth": {
+      "baseline_vote": 0.23426,
+      "baseline_gap": 0.13205120652571872,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.030432969069121796,
+          "d_asset": 0.008647174014712905,
+          "d_access": -0.0008936202854196718,
+          "vote": -0.00034000000000000696
+        },
+        "supply": {
+          "d_rent": -0.012827997320185469,
+          "d_asset": -0.01414613972869122,
+          "d_access": -0.016931872483860577,
+          "vote": -0.00541999999999998
+        },
+        "access": {
+          "d_rent": -0.004969660572441581,
+          "d_asset": 0.0019786468586759642,
+          "d_access": -0.006755839216012749,
+          "vote": -0.0002600000000000102
+        },
+        "transfer": {
+          "d_rent": -0.019021688427490302,
+          "d_asset": -0.006865669093512966,
+          "d_access": -0.15787300739521415,
+          "vote": -0.017479999999999968
+        },
+        "bundle": {
+          "d_rent": -0.06796003373514589,
+          "d_asset": -0.04790485600376371,
+          "d_access": -0.17725592506554683,
+          "vote": -0.027493333333333314
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "beta_n_0.3": {
+      "baseline_vote": 0.2242466666666667,
+      "baseline_gap": 0.12854504396413496,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03350786577802223,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.0027000000000000635
+        },
+        "supply": {
+          "d_rent": -0.013924546393867698,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.004146666666666687
+        },
+        "access": {
+          "d_rent": -0.004256927475550232,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -0.0009133333333333771
+        },
+        "transfer": {
+          "d_rent": -0.015063952934140423,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.015186666666666682
+        },
+        "bundle": {
+          "d_rent": -0.07228431060095711,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.02460000000000004
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    },
+    "beta_n_0.9": {
+      "baseline_vote": 0.25048666666666664,
+      "baseline_gap": 0.13880499526123202,
+      "deltas": {
+        "rent": {
+          "d_rent": -0.03350786577802223,
+          "d_asset": 0.004224899751205297,
+          "d_access": -0.004536039384130053,
+          "vote": -0.0024999999999999745
+        },
+        "supply": {
+          "d_rent": -0.013924546393867698,
+          "d_asset": -0.023518834601713,
+          "d_access": -0.017635928112260724,
+          "vote": -0.004846666666666638
+        },
+        "access": {
+          "d_rent": -0.004256927475550232,
+          "d_asset": -0.002327218323384117,
+          "d_access": -0.0060270303961154625,
+          "vote": -7.999999999996898e-05
+        },
+        "transfer": {
+          "d_rent": -0.015063952934140423,
+          "d_asset": -0.010712840378585775,
+          "d_access": -0.14888205701922047,
+          "vote": -0.017319999999999974
+        },
+        "bundle": {
+          "d_rent": -0.07228431060095711,
+          "d_asset": -0.047504753323955984,
+          "d_access": -0.17897235434338093,
+          "vote": -0.029253333333333326
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    }
+  }
+}

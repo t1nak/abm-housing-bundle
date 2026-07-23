@@ -51,6 +51,12 @@ class History:
     effective_friction: np.ndarray
     transfer_aggregate: np.ndarray
     income_aggregate: np.ndarray
+    # Per-period population-mean of each housing-pressure margin (filled only when
+    # voting.margin_decomposition is on; zeros otherwise). Drives the diagnostic
+    # decomposition counterfactual (which instrument relieves which margin).
+    d_rent: np.ndarray
+    d_asset: np.ndarray
+    d_access: np.ndarray
     # Per-period mean of the voting-input outcome o = income - rent + cap_gain
     # + transfer, restricted to agents who were renters / owners at the start
     # of the period. NaN at t=0 (no step has run); filled at t=1..T. Used by
@@ -136,6 +142,9 @@ def simulate(cfg: Config) -> tuple[HouseholdState, History, np.ndarray]:
         effective_friction=np.zeros(T + 1),
         transfer_aggregate=np.zeros(T + 1),
         income_aggregate=np.zeros(T + 1),
+        d_rent=np.zeros(T + 1),
+        d_asset=np.zeros(T + 1),
+        d_access=np.zeros(T + 1),
         renter_mean_o=np.full(T + 1, np.nan),
         owner_mean_o=np.full(T + 1, np.nan),
         n_renters=np.zeros(T + 1, dtype=int),
@@ -170,8 +179,17 @@ def simulate(cfg: Config) -> tuple[HouseholdState, History, np.ndarray]:
         cap_gain, rent_paid, transfer_received, housing_value_pre = step_wealth_and_ownership(
             state, house_price, price_growth, rent_index, initial_price, t, cfg, rng, intensities
         )
-        regional_dissat = step_voting(
-            state, cap_gain, rent_paid, transfer_received, housing_value_pre, cfg, rng
+        # Sustained regional house-price appreciation (asset-exclusion margin):
+        # log price growth over the asset_gain_window trailing periods.
+        w = cfg.voting.asset_gain_window
+        lag_idx = max(0, (t + 1) - w)
+        lagged_price = hist.price[lag_idx] if lag_idx <= t else initial_price
+        regional_price_gain = np.log(
+            np.maximum(house_price, 1e-9) / np.maximum(lagged_price, 1e-9)
+        )
+        regional_dissat, margin_means = step_voting(
+            state, cap_gain, rent_paid, transfer_received, housing_value_pre,
+            house_price, regional_price_gain, t, cfg, rng
         )
         hist.transfer_aggregate[t + 1] = float(transfer_received.sum())
         hist.income_aggregate[t + 1] = float(state.income.sum())
@@ -185,6 +203,8 @@ def simulate(cfg: Config) -> tuple[HouseholdState, History, np.ndarray]:
         hist.price[t + 1] = house_price
         hist.rent_index[t + 1] = rent_index
         hist.dissat[t + 1] = regional_dissat
+        if margin_means is not None:
+            hist.d_rent[t + 1], hist.d_asset[t + 1], hist.d_access[t + 1] = margin_means
         _record(t + 1, state, cfg, hist)
 
     return state, hist, house_price

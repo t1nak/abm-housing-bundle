@@ -232,6 +232,7 @@ def step_wealth_and_ownership(
     if beh.assortative_help_enabled:
         near_eligible = (
             (~state.homeowner)
+            & (state.age <= beh.assortative_help_recipient_max_age)
             & (state.wealth >= help_lower)
             & (state.wealth < buy_threshold)
             & (state.income > beh.buy_income_to_price * local_price)
@@ -246,8 +247,16 @@ def step_wealth_and_ownership(
         & (state.income > beh.buy_income_to_price * local_price)
     )
 
+    # Ownership-transition probability, scaled down in regions with deep
+    # rental markets (rental_market_depth > 1) and up where owner-occupancy
+    # is the institutional norm (depth < 1); depth = 1 recovers the uniform
+    # baseline probability.
+    p_buy = np.clip(
+        beh.buy_probability / cfg.regional.rental_market_depth[state.region],
+        0.0, 1.0,
+    )
     buy_draws = rng.uniform(0.0, 1.0, size=eligible_to_buy.shape)
-    can_buy = eligible_to_buy & (buy_draws < beh.buy_probability)
+    can_buy = eligible_to_buy & (buy_draws < p_buy)
     must_sell = state.homeowner & (state.wealth < sell_threshold)
     state.homeowner = (state.homeowner | can_buy) & (~must_sell)
 

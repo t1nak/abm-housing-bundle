@@ -116,6 +116,9 @@ _PARAM_GETTERS: dict[str, Callable[[Config], float]] = {
     "intergenerational_skill_corr": _get_demographic("intergenerational_skill_corr"),
     "beta_network": _get_voting("beta_network"),
     "gamma_cosmopolitan": _get_voting("gamma_cosmopolitan"),
+    "gamma_rent": _get_voting("gamma_rent"),
+    "gamma_asset": _get_voting("gamma_asset"),
+    "gamma_access": _get_voting("gamma_access"),
 }
 
 
@@ -144,8 +147,32 @@ _GAMMA_COSMO_PARAM = ParamSpec(
 )
 
 
+# Three-margin (Version A) free-parameter space: the per-margin voting
+# responses, aspiration persistence, and the level intercept. beta_renter is
+# held at 0 so the margins themselves must explain the tenure cleavage.
+# Demographic, wealth-return, bequest, and housing-price parameters are fixed
+# externally (not estimated) to avoid the boundary-estimate pathology.
+_MARGIN_PARAM_SPACE: tuple[ParamSpec, ...] = (
+    # Disciplined gamma bounds [0, 1.5]: the first pilot used [0, 8] and the
+    # margins overshot. If the model can only fit with larger gammas, that is
+    # reported as a limitation rather than silently widening the bounds.
+    ParamSpec("gamma_rent", 0.0, 1.5, _set_voting("gamma_rent")),
+    ParamSpec("gamma_asset", 0.0, 1.5, _set_voting("gamma_asset")),
+    ParamSpec("gamma_access", 0.0, 1.5, _set_voting("gamma_access")),
+    ParamSpec("rho_aspiration", 0.40, 0.95, _set_voting("rho_aspiration")),
+    # beta_0 is the non-housing (owner) baseline intercept. Bounded to a
+    # plausible range: beta_0 = -2 gives an owner extreme-vote of ~0.12,
+    # beta_0 = -4.5 ~0.011. Values below -4.5 imply owners essentially never
+    # vote extreme (empirically absurd) and create a flat near-zero-vote local
+    # optimum that the optimizer otherwise falls into.
+    ParamSpec("beta_0", -4.5, -2.0, _set_voting("beta_0")),
+)
+
+
 def build_param_space(cfg: Config) -> tuple[ParamSpec, ...]:
     """Return the SMM free-parameter space implied by the cfg flags."""
+    if cfg.voting.margin_decomposition:
+        return _MARGIN_PARAM_SPACE
     extras: list[ParamSpec] = []
     if cfg.behavioral.estimate_beta_n:
         extras.append(_BETA_N_PARAM)

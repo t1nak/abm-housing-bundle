@@ -32,6 +32,9 @@ def step_voting(
     rent_paid: np.ndarray,
     transfer_received: np.ndarray,
     housing_value_pre: np.ndarray,
+    house_price: np.ndarray,
+    regional_price_gain: np.ndarray,
+    period: int,
     cfg: Config,
     rng: np.random.Generator,
 ) -> np.ndarray:
@@ -123,6 +126,73 @@ def step_voting(
         if mask.any():
             local_extreme_share[r] = state.extreme_voter[mask].mean()
 
+    renter = (~state.homeowner).astype(float)
+    margin_means = None  # (d_rent, d_asset, d_access) population means when decomposed
+
+    # --- Three-margin housing-pressure decomposition (rebuild) ---
+    # Each margin is a normalised positive gap in [0, 1]; gamma_* are the
+    # per-margin voting responses. The single beta_dissat * dissat term is
+    # used only when margin_decomposition is off (legacy specification).
+    if voting.margin_decomposition:
+        beh = cfg.behavioral
+        A = np.maximum(state.aspiration, 1.0)
+        # 1. Rent burden / consumption stress: after-rent income shortfall
+        #    relative to the regional income aspiration.
+        after_rent = state.income - rent_paid
+        if voting.rent_margin_spec == "baseline":
+            d_rent = np.clip(np.maximum(0.0, A - after_rent) / A, 0.0, 1.0)
+        elif voting.rent_margin_spec == "incremental":
+            # Construct-validity variant: only the increment in the
+            # aspiration shortfall CAUSED by rent (excludes the pre-rent
+            # income shortfall a low-income household would register even
+            # at zero rent).
+            gap_with = np.maximum(0.0, A - after_rent)
+            gap_without = np.maximum(0.0, A - state.income)
+            d_rent = np.clip((gap_with - gap_without) / A, 0.0, 1.0)
+        elif voting.rent_margin_spec == "rent_to_income":
+            # Construct-validity variant: conventional rent-burden measure,
+            # normalised by the Eurostat 40% housing-cost overburden
+            # threshold. No aspiration reference.
+            d_rent = np.clip(
+                rent_paid / np.maximum(state.income, 1.0) / 0.40, 0.0, 1.0)
+        else:
+            raise ValueError(
+                f"unknown rent_margin_spec {voting.rent_margin_spec!r}")
+        if voting.rent_margin_renters_only:
+            # Baseline (paper): rent stress is gated on renters, matching
+            # the tenure gate carried by the other two margins.
+            d_rent = renter * d_rent
+        # 2. Asset exclusion: non-owners shut out of sustained regional
+        #    house-price appreciation (smoothed multi-period log growth).
+        d_asset = renter * np.clip(
+            np.maximum(0.0, regional_price_gain[state.region]), 0.0, 1.0)
+        # 3. Ownership-access exclusion: non-owners' wealth shortfall below the
+        #    regional buy threshold (down payment). Family wealth is the
+        #    mechanism that lets some households close this gap.
+        buy_threshold = np.maximum(
+            beh.buy_wealth_to_price * house_price[state.region], 1.0)
+        d_access = renter * np.clip(
+            np.maximum(0.0, buy_threshold - state.wealth) / buy_threshold, 0.0, 1.0)
+        if voting.access_margin_include_income:
+            # Construct-validity variant: the access margin reflects both
+            # eligibility constraints of the tenure block (wealth AND
+            # income tests), taking the larger of the two shortfalls.
+            inc_threshold = np.maximum(
+                beh.buy_income_to_price * house_price[state.region], 1.0)
+            inc_gap = np.clip(
+                np.maximum(0.0, inc_threshold - state.income) / inc_threshold,
+                0.0, 1.0)
+            d_access = renter * np.maximum(d_access, inc_gap)
+        margin_term = (voting.gamma_rent * d_rent
+                       + voting.gamma_asset * d_asset
+                       + voting.gamma_access * d_access)
+        # Record the unweighted mean of the three margins as dissatisfaction.
+        dissat = np.clip((d_rent + d_asset + d_access) / 3.0, 0.0, 1.0)
+        margin_means = (float(d_rent.mean()), float(d_asset.mean()),
+                        float(d_access.mean()))
+    else:
+        margin_term = voting.beta_dissat * dissat
+
     # Track-B cosmopolitan-proxy pilot: optional region-specific intercept shift.
     # The shift vector is precomputed externally as
     #     gamma * (grad_share_r - mean_grad_share_country)
@@ -138,11 +208,24 @@ def step_voting(
             )
         beta_0_eff = voting.beta_0 + shift_array[state.region]
 
+    # Preset (exogenous) fixed effects: time FE absorb national election-cycle
+    # shocks; region FE absorb stable political geography.
+    fe_t = 0.0
+    if (voting.time_fixed_effects is not None
+            and 0 <= period < len(voting.time_fixed_effects)):
+        fe_t = float(voting.time_fixed_effects[period])
+    if voting.region_fixed_effects is not None:
+        fe_r = np.asarray(voting.region_fixed_effects, dtype=float)[state.region]
+    else:
+        fe_r = 0.0
+
     logit = (
         beta_0_eff
-        + voting.beta_dissat * dissat
+        + margin_term
         + voting.beta_network * local_extreme_share[state.region]
-        + voting.beta_renter * (~state.homeowner).astype(float)
+        + voting.beta_renter * renter
+        + fe_t
+        + fe_r
     )
     p_ext = 1.0 / (1.0 + np.exp(-logit))
     state.extreme_voter = rng.uniform(0.0, 1.0, size=p_ext.shape) < p_ext
@@ -152,4 +235,4 @@ def step_voting(
         mask = state.region == r
         if mask.any():
             regional_dissat[r] = dissat[mask].mean()
-    return regional_dissat
+    return regional_dissat, margin_means

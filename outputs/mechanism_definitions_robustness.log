@@ -1,0 +1,9 @@
+Mechanism-definition robustness: ['baseline', 'rent_incremental', 'rent_to_income', 'access_income'] ...
+variant              beta0   vote     gap |  dV_rent   dV_sup   dV_acc   dV_tra   dV_bun | checks
+-------------------------------------------------------------------------------------------------
+baseline             -1.82  0.209  +0.102 |  -0.0024  -0.0044  -0.0007  -0.0158  -0.0264 | YYYYYY
+rent_incremental     -1.76  0.208  +0.084 |  -0.0025  -0.0047  -0.0008  -0.0153  -0.0247 | YYYYYY
+rent_to_income       -1.82  0.207  +0.097 |  -0.0069  -0.0059  -0.0004  -0.0154  -0.0311 | YYYYYY
+access_income        -1.82  0.209  +0.102 |  -0.0023  -0.0044  -0.0007  -0.0145  -0.0257 | YYYYYY
+
+All six checks pass in 4/4 definitions.

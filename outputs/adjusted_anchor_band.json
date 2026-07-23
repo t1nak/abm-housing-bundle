@@ -1,0 +1,170 @@
+{
+  "0.15": {
+    "s_scale": 0.917,
+    "beta0": -2.038,
+    "vote": 0.2071,
+    "gap": 0.1521,
+    "gamma": [
+      0.44,
+      0.807,
+      0.734
+    ],
+    "vote_gamma0": 0.1232,
+    "housing_share": 0.405,
+    "policy": {
+      "deltas": {
+        "rent": {
+          "d_rent": -0.0335,
+          "d_asset": 0.0042,
+          "d_access": -0.0045,
+          "vote": -0.0039
+        },
+        "supply": {
+          "d_rent": -0.0139,
+          "d_asset": -0.0235,
+          "d_access": -0.0176,
+          "vote": -0.0077
+        },
+        "access": {
+          "d_rent": -0.0043,
+          "d_asset": -0.0023,
+          "d_access": -0.006,
+          "vote": -0.0007
+        },
+        "transfer": {
+          "d_rent": -0.0151,
+          "d_asset": -0.0107,
+          "d_access": -0.1489,
+          "vote": -0.0251
+        },
+        "bundle": {
+          "d_rent": -0.0723,
+          "d_asset": -0.0475,
+          "d_access": -0.179,
+          "vote": -0.0408
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    }
+  },
+  "0.10": {
+    "s_scale": 0.61,
+    "beta0": -1.82,
+    "vote": 0.2091,
+    "gap": 0.1022,
+    "gamma": [
+      0.293,
+      0.537,
+      0.488
+    ],
+    "vote_gamma0": 0.1507,
+    "housing_share": 0.279,
+    "policy": {
+      "deltas": {
+        "rent": {
+          "d_rent": -0.0335,
+          "d_asset": 0.0042,
+          "d_access": -0.0045,
+          "vote": -0.0024
+        },
+        "supply": {
+          "d_rent": -0.0139,
+          "d_asset": -0.0235,
+          "d_access": -0.0176,
+          "vote": -0.0044
+        },
+        "access": {
+          "d_rent": -0.0043,
+          "d_asset": -0.0023,
+          "d_access": -0.006,
+          "vote": -0.0007
+        },
+        "transfer": {
+          "d_rent": -0.0151,
+          "d_asset": -0.0107,
+          "d_access": -0.1489,
+          "vote": -0.0158
+        },
+        "bundle": {
+          "d_rent": -0.0723,
+          "d_asset": -0.0475,
+          "d_access": -0.179,
+          "vote": -0.0264
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    }
+  },
+  "0.05": {
+    "s_scale": 0.295,
+    "beta0": -1.682,
+    "vote": 0.1987,
+    "gap": 0.0468,
+    "gamma": [
+      0.142,
+      0.26,
+      0.236
+    ],
+    "vote_gamma0": 0.1712,
+    "housing_share": 0.138,
+    "policy": {
+      "deltas": {
+        "rent": {
+          "d_rent": -0.0335,
+          "d_asset": 0.0042,
+          "d_access": -0.0045,
+          "vote": -0.001
+        },
+        "supply": {
+          "d_rent": -0.0139,
+          "d_asset": -0.0235,
+          "d_access": -0.0176,
+          "vote": -0.0022
+        },
+        "access": {
+          "d_rent": -0.0043,
+          "d_asset": -0.0023,
+          "d_access": -0.006,
+          "vote": -0.0003
+        },
+        "transfer": {
+          "d_rent": -0.0151,
+          "d_asset": -0.0107,
+          "d_access": -0.1489,
+          "vote": -0.0071
+        },
+        "bundle": {
+          "d_rent": -0.0723,
+          "d_asset": -0.0475,
+          "d_access": -0.179,
+          "vote": -0.012
+        }
+      },
+      "checks": {
+        "q1_supply_all_three": true,
+        "q2_transfer_largest": true,
+        "q3_ownership_smallest": true,
+        "q4_rent_hits_rent": true,
+        "q5_transfer_hits_access": true,
+        "q6_bundle_all_three": true
+      },
+      "all_pass": true
+    }
+  }
+}

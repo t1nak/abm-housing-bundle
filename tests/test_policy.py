@@ -237,3 +237,34 @@ def test_transaction_friction_reduces_ownership_transitions():
     reduction = 1.0 - ra_entries / max(np_entries, 1e-9)
     assert reduction >= 0.25, \
         f"new-entry reduction {reduction:.3f} below 25% target (np={np_entries:.4f}, rationed={ra_entries:.4f})"
+
+
+def test_zero_instrument_activation_equals_baseline():
+    """Audit invariant (the Scenario D vs Scenario A question).
+
+    Policy-regime activation must not move the extreme-share vote on its own:
+    the policy state enters households ONLY through the housing instruments.
+    So with every instrument set to zero, an *activated* regime must reproduce
+    the no-activation baseline vote trajectory bit-for-bit, at the same beta_0
+    and seed. Any divergence means a direct activation channel has leaked into
+    the voting block (violating the paper's stated mechanism), or that an
+    apples-to-oranges beta_0 was used across scenarios. The original headline
+    compared Scenario A (beta_0 from the SMM optimum) against Scenarios B-E
+    (beta_0 = -3.5); this test pins the clean comparison at a common beta_0."""
+    seeds = [73, 74, 75, 76, 77]
+    beta = -3.5  # the property holds at any beta_0; -3.5 is the activated world
+    for s in seeds:
+        baseline = _config_with(seed=s, beta_0=beta, incumbency_threshold=1.0)
+        activated_zero = _config_with(
+            seed=s, beta_0=beta, force_regime=PolicyRegime.POPULIST,
+            rent_cap_intensity=0.0, supply_restriction_intensity=0.0,
+            transaction_friction=0.0,
+        )
+        _, h_base, _ = simulate(baseline)
+        _, h_zero, _ = simulate(activated_zero)
+        np.testing.assert_allclose(
+            h_zero.vote_aggregate, h_base.vote_aggregate, atol=1e-12,
+            err_msg=(f"seed {s}: activation moved the vote with zero "
+                     f"instruments; a direct activation channel has leaked "
+                     f"into voting"),
+        )

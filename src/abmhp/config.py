@@ -49,6 +49,26 @@ class RegionalConfig:
     regional_shock_innovation_sd: float = 0.012
     regional_shock_persistence: float = 1.0
 
+    # Rental-market depth: reduced form for region-specific rental-market
+    # institutions (rental stock composition, rental regulation, urban
+    # form). German metropolitan regions have deep, institutionalised
+    # rental markets and much lower owner-occupancy than peripheral
+    # regions -- the pattern the model got backwards before this block
+    # existed (paper round 11). depth > 1 raises the wealth bar for the
+    # initial tenure assignment and lowers the ownership-transition
+    # probability by the same factor; depth < 1 does the opposite.
+    # Values are calibrated to the observed German regional owner-
+    # occupancy ordering (superstar < average < declining) and the
+    # aggregate owner-occupancy target, not to any political moment.
+    # A vector of ones reproduces the pre-repair tenure block exactly.
+    rental_market_depth: np.ndarray = field(
+        default_factory=lambda: np.concatenate([
+            np.array([2.35, 2.20, 2.05, 1.95]),
+            np.ones(8) * 1.00,
+            np.array([0.82, 0.79, 0.77, 0.74]),
+        ])
+    )
+
     @property
     def pop_share(self) -> np.ndarray:
         s = self.pop_share_raw
@@ -115,7 +135,7 @@ class BehavioralConfig:
     # Ownership transitions.
     buy_wealth_to_price: float = 0.30
     buy_income_to_price: float = 0.10
-    buy_probability: float = 0.35
+    buy_probability: float = 0.28
     sell_wealth_to_price: float = 0.04
 
     # Assortative help at first-ownership entry. Operationalises the
@@ -150,11 +170,23 @@ class BehavioralConfig:
     # intergenerational-transfer summaries in a future revision.
     # TODO: cross-check p_assortative_help and f_assortative_help
     # against SOEP intergenerational-transfer wave (Schupp et al.).
-    assortative_help_enabled: bool = False
-    p_assortative_help: float = 0.05
+    # Baseline ON since paper round 11 (tenure-block repair): early
+    # parental transfers/guarantees at first-ownership entry are a
+    # documented feature of German ownership access; without the channel
+    # the model understates young-adult ownership severely. Intensity is
+    # calibrated to the young-adult (20-34) owner-occupancy rate
+    # (~0.10-0.15), not to any political moment. Setting enabled=False
+    # recovers the pre-repair specification (robustness variant).
+    assortative_help_enabled: bool = True
+    p_assortative_help: float = 0.18
     f_assortative_help: float = 0.15
-    assortative_help_wealth_lower_factor: float = 0.20
+    assortative_help_wealth_lower_factor: float = 0.08
     assortative_help_donor_min_age: float = 55.0
+    # Recipients are young first-time buyers: parental help with a first
+    # home is a life-stage transfer, so the channel is capped at the age
+    # below (paper round 11). This targets the young-adult ownership
+    # moment without inflating ownership among older renters.
+    assortative_help_recipient_max_age: float = 45.0
 
     # Augmented-model SMM flags. When False (default), the SMM free-
     # parameter space is the original 8-parameter set; when True, the
@@ -178,10 +210,10 @@ class DemographicConfig:
     gompertz_B: float = 0.085
     mortality_cap: float = 0.40
 
-    # Bequest assortativity and taxation. Calibrated to Bundesbank PHF wave 4
+    # Bequest assortativity and taxation. Calibrated to Bundesbank PHF wave 3
     # (2017) anchors after grid search across the three tuning levers.
     bequest_tax_rate: float = 0.22
-    assortative_exponent: float = 2.10
+    assortative_exponent: float = 2.30
     same_region_prob: float = 0.6
 
     # Replacement young agent.
@@ -205,6 +237,61 @@ class VotingConfig:
     beta_dissat: float = 6.5
     beta_network: float = 0.6
     beta_renter: float = 0.5
+
+    # --- Three-margin decomposition (model rebuild) ---
+    # When margin_decomposition is True, the single beta_dissat * dissat term in
+    # the voting logit is replaced by a sum over three explicit, separable
+    # housing-pressure margins, each a normalised positive gap in [0, 1]:
+    #     gamma_rent   * d_rent   (consumption stress: after-rent income shortfall)
+    #   + gamma_asset  * d_asset  (asset exclusion: renters miss sustained regional
+    #                              house-price appreciation)
+    #   + gamma_access * d_access (ownership-access exclusion: wealth shortfall
+    #                              below the buy threshold; family-financed gap)
+    # This makes the three-margin claim testable: rent policy reaches d_rent
+    # only, leaving d_asset and d_access intact. Default False reproduces the
+    # scalar-dissatisfaction specification exactly.
+    margin_decomposition: bool = False
+    gamma_rent: float = 0.0
+    gamma_asset: float = 0.0
+    gamma_access: float = 0.0
+    # Robustness flag: when True, the rent-stress margin d_rent is gated on
+    # renters (multiplied by 1 - homeowner), so owners register zero rent
+    # stress by construction. Default False reproduces the headline
+    # specification, in which d_rent is an after-rent aspiration shortfall
+    # for ALL households (owners pay zero rent, so for them it reduces to a
+    # pure income-aspiration gap). See the manuscript's mechanism section
+    # and Online Appendix robustness sweep (variant "rent_gated").
+    rent_margin_renters_only: bool = False
+    # Construct-validity variants for the rent-stress margin (robustness
+    # only; "baseline" reproduces the headline after-rent aspiration
+    # shortfall bit-for-bit):
+    #   "baseline"       max(0, y* - (y - rent)) / max(y*, 1)
+    #   "incremental"    the INCREMENT in the aspiration shortfall caused by
+    #                    rent: [max(0, y* - y + rent) - max(0, y* - y)] /
+    #                    max(y*, 1). Isolates the rent-caused part of the
+    #                    gap, excluding the pre-rent income shortfall.
+    #   "rent_to_income" conventional burden measure: clip(rent / income /
+    #                    0.40), normalised by the Eurostat 40% housing-cost
+    #                    overburden threshold. No aspiration reference.
+    # All variants respect rent_margin_renters_only.
+    rent_margin_spec: str = "baseline"
+    # Construct-validity variant for the ownership-access margin: when True,
+    # d_access = (1-h) * clip(max(wealth gap, income gap)) where the income
+    # gap is the shortfall below the buy-income test (buy_income_to_price *
+    # price), so the margin reflects BOTH eligibility constraints of the
+    # tenure block rather than wealth alone. Default False reproduces the
+    # headline wealth-only definition.
+    access_margin_include_income: bool = False
+    # Smoothing window (periods) for the regional house-price appreciation that
+    # drives the asset-exclusion margin (sustained exclusion, not 1-period noise).
+    asset_gain_window: int = 5
+    # Preset (exogenous) fixed effects added to the voting logit: length
+    # n_periods (time) and n_regions (region). None => no effect. Time FE absorb
+    # national election-cycle shocks (2017 spike / 2021 dip); region FE absorb
+    # stable political geography, so the housing margins explain within-time,
+    # within-region variation rather than the whole AfD map.
+    time_fixed_effects: tuple[float, ...] | None = None
+    region_fixed_effects: tuple[float, ...] | None = None
     # Optional regional intercept shift for the cosmopolitan-proxy channel.
     # When set, the per-agent vote intercept becomes
     #     beta_0 + cosmopolitan_shift_by_region[r]
